@@ -1,5 +1,5 @@
-function AboutMe() {
+function Contact() {
   return <div></div>;
 }
 
-export default AboutMe;
+export default Contact;
