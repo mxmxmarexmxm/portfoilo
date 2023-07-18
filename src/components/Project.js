@@ -1,22 +1,28 @@
 import React from 'react';
+import LogoBadgeContainer from './ui/logo-badge-container';
 
 const Project = (props) => {
-  const { title, name, phoneImgUrl, desktopImgUrl, description, url } = props;
+  const { title, name, phoneImgUrl, desktopImgUrl, description, url, techs } =
+    props;
   return (
     <div className="flex flex-col">
       <div className="text-center font-bold">
         <span className="text-gray-500 ">{title}</span>
-        <h2 className="text-5xl text-center font-bold">{name}</h2>
+        <h2 className="text-5xl font-bold">{name}</h2>
       </div>
-      <div className="flex justify-center my-4 w-full items-center">
-        <div className="w-2/3 mr-6 sm:mr-16">
-          <img src={desktopImgUrl} className="w-full" />
-        </div>
-        <div className="w-1/6 mr-6">
-          <img src={phoneImgUrl} className="w-full" />
+      <div className="flex justify-center my-4 w-full items-center md:justify-center">
+        <div className="flex justify-center my-4 w-full items-center overflow-hidden">
+          <div className="w-6/12 mr-6 sm:ml-36">
+            <img src={desktopImgUrl} className="w-full" alt={`pc-${name}`} />
+          </div>
+
+          <div className="w-[10%] justify-self-end">
+            <img src={phoneImgUrl} className="w-full" alt={`phone-${name}`} />
+          </div>
         </div>
       </div>
-      <div>
+      <LogoBadgeContainer techs={techs} />
+      <div className="flex-1 text-center">
         <p className="my-5">{description}</p>
         <a
           href={url}
