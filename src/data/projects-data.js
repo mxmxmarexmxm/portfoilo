@@ -10,6 +10,7 @@ const projects = [
     description:
       'Online store for selling mobile devices equipment, especially for covers.',
     url: 'https://maske.rs/',
+    techs: ['react', 'next', 'tailwind', 'graphql']
   },
 ];
 
