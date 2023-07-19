@@ -2,8 +2,16 @@ import React from 'react';
 import LogoBadgeContainer from './ui/logo-badge-container';
 
 const Project = (props) => {
-  const { title, name, phoneImgUrl, desktopImgUrl, description, url, techs, github } =
-    props;
+  const {
+    title,
+    name,
+    phoneImgUrl,
+    desktopImgUrl,
+    description,
+    url,
+    techs,
+    github,
+  } = props;
   return (
     <div className="flex flex-col my-36">
       <div className="text-center font-bold">
@@ -31,13 +39,15 @@ const Project = (props) => {
         >
           Visit the app
         </a>
-        <a
-          href={github}
-          target="_blanc"
-          className="text-blue-500 visited:text-blue-300 my-8 block"
-        >
-          Github
-        </a>
+        {github && (
+          <a
+            href={github}
+            target="_blanc"
+            className="text-blue-500 visited:text-blue-300 my-8 block"
+          >
+            Github
+          </a>
+        )}
       </div>
     </div>
   );
