@@ -32,6 +32,7 @@ const projects = [
     description:
       'ChatFilx is an IT-focused chat application that fosters collaborative discussions and knowledge sharing among professionals in a user-friendly environment.',
     url: 'https://mxmxmarexmxm.github.io/ChatFlix/',
+    github: 'https://github.com/mxmxmarexmxm/ChatFlix',
     techs: ['react', 'CSS Modules', 'Firebase'],
   },
   {
@@ -42,6 +43,7 @@ const projects = [
     description:
       'AntiReels is a simple extension for Firefox and Chrome that helps you stay focused and productive by blocking short content from Facebook, Instagram, TikTok and YouTube. ',
     // url: 'https://maske.rs/',
+    github:'https://github.com/mxmxmarexmxm/AntiReels',
     techs: ['html', 'css', 'js'],
   },
 ];
