@@ -43,8 +43,19 @@ const projects = [
     description:
       'AntiReels is a simple extension for Firefox and Chrome that helps you stay focused and productive by blocking short content from Facebook, Instagram, TikTok and YouTube. ',
     // url: 'https://maske.rs/',
-    github:'https://github.com/mxmxmarexmxm/AntiReels',
+    github: 'https://github.com/mxmxmarexmxm/AntiReels',
     techs: ['html', 'css', 'js'],
+  },
+  {
+    title: 'QUIZ APPLICATION',
+    name: 'IT Quiz',
+    phoneImgUrl: placeholderPhone,
+    desktopImgUrl: placeholderPc,
+    description:
+      'IT Quiz is a simple quiz application. It provides a collection of IT-related questions and allows users to test their knowledge in various IT domains.',
+    url: 'https://mxmxmarexmxm.github.io/it-quiz/',
+    github: 'https://github.com/mxmxmarexmxm/it-quiz',
+    techs: ['react', 'CSS Modules'],
   },
 ];
 
