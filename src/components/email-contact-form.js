@@ -28,7 +28,7 @@ const EmailContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="text-white bg-gray-700 flex flex-col p-16 w-1/2 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
+      className="text-white bg-gray-700 flex flex-col p-4 sm:p-16 sm:w-1/2 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
     >
       <label className="font-bold text-xl">Name</label>
       <input
