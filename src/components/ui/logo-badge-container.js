@@ -16,7 +16,10 @@ const LogoBadgeContainer = (props) => {
   return (
     <div className="w-full flex justify-center items-center gap-4">
       {techs.map((tech) => (
-        <div className="h-12 sm:h-20  flex aspect-square rounded-full hover:scale-125">
+        <div
+          key={tech}
+          className="h-12 sm:h-20  flex aspect-square rounded-full hover:scale-125"
+        >
           <img
             src={logos[tech]}
             className="w-full object-contain"
