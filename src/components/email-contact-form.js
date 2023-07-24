@@ -36,6 +36,7 @@ const EmailContactForm = () => {
         name="from_name"
         placeholder="What's your name?"
         className="text-black p-4 rounded-lg"
+        required
       />
       <label className="font-bold text-xl">Email</label>
       <input
@@ -43,12 +44,14 @@ const EmailContactForm = () => {
         name="user_email"
         placeholder="Where can I reach you?"
         className="text-black p-4 rounded-lg"
+        required
       />
       <label className="font-bold text-xl">Message</label>
       <textarea
         name="message"
         className="text-black h-48 rounded-lg p-4"
         placeholder="Type your message here."
+        required
       />
       <input
         type="submit"
