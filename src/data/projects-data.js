@@ -33,7 +33,7 @@ const projects = [
       'ChatFilx is an IT-focused chat application that fosters collaborative discussions and knowledge sharing among professionals in a user-friendly environment.',
     url: 'https://mxmxmarexmxm.github.io/ChatFlix/',
     github: 'https://github.com/mxmxmarexmxm/ChatFlix',
-    techs: ['react', 'CSS Modules', 'Firebase'],
+    techs: ['react', 'css', 'firebase'],
   },
   {
     title: 'SHORT CONTENT BLOCKER',
@@ -55,7 +55,7 @@ const projects = [
       'IT Quiz is a simple quiz application. It provides a collection of IT-related questions and allows users to test their knowledge in various IT domains.',
     url: 'https://mxmxmarexmxm.github.io/it-quiz/',
     github: 'https://github.com/mxmxmarexmxm/it-quiz',
-    techs: ['react', 'CSS Modules'],
+    techs: ['react', 'css'],
   },
 ];
 
