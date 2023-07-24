@@ -18,15 +18,16 @@ const Project = (props) => {
         <span className="text-gray-500 ">{title}</span>
         <h2 className="text-5xl font-bold">{name}</h2>
       </div>
-      <div className="flex justify-center my-4 w-full items-center md:justify-center">
+      <div className="flex justify-center my-4 w-full items-center md:justify-center ">
         <div className="flex justify-center my-4 w-full items-center overflow-hidden">
           <div className="w-6/12 mr-6 sm:ml-36">
             <img src={desktopImgUrl} className="w-full" alt={`pc-${name}`} />
           </div>
-
-          <div className="w-[10%] justify-self-end">
-            <img src={phoneImgUrl} className="w-full" alt={`phone-${name}`} />
-          </div>
+          {phoneImgUrl && (
+            <div className="w-[10%] justify-self-end">
+              <img src={phoneImgUrl} className="w-full" alt={`phone-${name}`} />
+            </div>
+          )}
         </div>
       </div>
       <LogoBadgeContainer techs={techs} />
