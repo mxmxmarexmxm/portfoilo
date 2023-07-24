@@ -4,7 +4,7 @@ import Work from './work';
 
 const Home = () => {
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col gap-16">
       <AboutMe />
       <Work />
       <Contact />
