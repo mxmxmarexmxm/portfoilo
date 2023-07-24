@@ -13,7 +13,7 @@ const Project = (props) => {
     github,
   } = props;
   return (
-    <div className="flex flex-col my-36">
+    <div className="flex flex-col">
       <div className="text-center font-bold">
         <span className="text-gray-500 ">{title}</span>
         <h2 className="text-5xl font-bold">{name}</h2>
