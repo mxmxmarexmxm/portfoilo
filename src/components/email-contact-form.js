@@ -34,16 +34,22 @@ const EmailContactForm = () => {
       <input
         type="text"
         name="from_name"
+        placeholder="What's your name?"
         className="text-black p-4 rounded-lg"
       />
       <label className="font-bold text-xl">Email</label>
       <input
         type="email"
         name="user_email"
+        placeholder="Where can I reach you?"
         className="text-black p-4 rounded-lg"
       />
       <label className="font-bold text-xl">Message</label>
-      <textarea name="message" className="text-black h-48 rounded-lg p-4" />
+      <textarea
+        name="message"
+        className="text-black h-48 rounded-lg p-4"
+        placeholder="Type your message here."
+      />
       <input
         type="submit"
         value="Send"
