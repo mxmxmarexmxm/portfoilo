@@ -1,14 +1,7 @@
-import projectsData from '../data/projects-data';
-import Project from '../components/Project';
+import ProjectCarrousel from '../components/ProjectCarrousel';
 
 const Work = () => {
-  return (
-    <div>
-      {projectsData.map((project) => (
-        <Project {...project} key={project.name} />
-      ))}
-    </div>
-  );
+  return <ProjectCarrousel />;
 };
 
 export default Work;
