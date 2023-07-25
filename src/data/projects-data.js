@@ -1,14 +1,16 @@
-import maskeDesk from '../assets/img/maskeDesk.png';
-import maskePhone from '../assets/img/maskePhone.png';
-import placeholderPc from '../assets/img/placeholder-pc.png';
-import placeholderPhone from '../assets/img/placehoder-phone.png';
+import chatFlix from '../assets/img/projects/chatflix.png';
+import wartung from '../assets/img/projects/wartung.png';
+import itQuiz from '../assets/img/projects/it-quiz.png';
+import maske from '../assets/img/projects/maske.png';
+import antiReels from '../assets/img/projects/antireels.png';
+// import placeholderPc from '../assets/img/placeholder-pc.png';
+// import placeholderPhone from '../assets/img/placehoder-phone.png';
 
 const projects = [
   {
     title: 'E-COMMERCE APPLICATION',
     name: 'Maske.rs',
-    phoneImgUrl: maskePhone,
-    desktopImgUrl: maskeDesk,
+    desktopImgUrl: maske,
     description:
       'Online store for selling mobile devices equipment, especially for covers.',
     url: 'https://maske.rs/',
@@ -17,8 +19,7 @@ const projects = [
   {
     title: 'CONTENT MANAGEMENT SYSTEM',
     name: 'ASM Wartung',
-    phoneImgUrl: placeholderPhone,
-    desktopImgUrl: placeholderPc,
+    desktopImgUrl: wartung,
     description:
       'Wartung is a comprehensive CMS tailored for businesses, offering seamless content creation, editing, and management capabilities. ',
     url: 'https://app.asm-wartung.de/',
@@ -27,8 +28,7 @@ const projects = [
   {
     title: 'CHAT APPLICATION',
     name: 'ChatFlix',
-    phoneImgUrl: placeholderPhone,
-    desktopImgUrl: placeholderPc,
+    desktopImgUrl: chatFlix,
     description:
       'ChatFilx is an IT-focused chat application that fosters collaborative discussions and knowledge sharing among professionals in a user-friendly environment.',
     url: 'https://mxmxmarexmxm.github.io/ChatFlix/',
@@ -38,19 +38,16 @@ const projects = [
   {
     title: 'SHORT CONTENT BLOCKER',
     name: 'AntiReels',
-    // phoneImgUrl: maskePhone,
-    desktopImgUrl: placeholderPc,
+    desktopImgUrl: antiReels,
     description:
       'AntiReels is a simple extension for Firefox and Chrome that helps you stay focused and productive by blocking short content from Facebook, Instagram, TikTok and YouTube. ',
-    // url: 'https://maske.rs/',
     github: 'https://github.com/mxmxmarexmxm/AntiReels',
     techs: ['html', 'css', 'js'],
   },
   {
     title: 'QUIZ APPLICATION',
     name: 'IT Quiz',
-    phoneImgUrl: placeholderPhone,
-    desktopImgUrl: placeholderPc,
+    desktopImgUrl: itQuiz,
     description:
       'IT Quiz is a simple quiz application. It provides a collection of IT-related questions and allows users to test their knowledge in various IT domains.',
     url: 'https://mxmxmarexmxm.github.io/it-quiz/',
