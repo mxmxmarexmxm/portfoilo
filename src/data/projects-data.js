@@ -3,8 +3,6 @@ import wartung from '../assets/img/projects/wartung.png';
 import itQuiz from '../assets/img/projects/it-quiz.png';
 import maske from '../assets/img/projects/maske.png';
 import antiReels from '../assets/img/projects/antireels.png';
-// import placeholderPc from '../assets/img/placeholder-pc.png';
-// import placeholderPhone from '../assets/img/placehoder-phone.png';
 
 const projects = [
   {
