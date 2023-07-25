@@ -1,12 +1,12 @@
 import React from 'react';
-import react from './../../assets/img/react.png';
-import next from './../../assets/img/next.png';
-import tailwind from './../../assets/img/tailwind.png';
-import graphql from './../../assets/img/graphql.png';
-import firebase from './../../assets/img/firebase.png';
-import css from './../../assets/img/css.png';
-import html from './../../assets/img/html.png';
-import js from './../../assets/img/js.png';
+import react from './../../assets/img/logo/react.png';
+import next from './../../assets/img/logo/next.png';
+import tailwind from './../../assets/img/logo/tailwind.png';
+import graphql from './../../assets/img/logo/graphql.png';
+import firebase from './../../assets/img/logo/firebase.png';
+import css from './../../assets/img/logo/css.png';
+import html from './../../assets/img/logo/html.png';
+import js from './../../assets/img/logo/js.png';
 
 const logos = {
   react: react,
@@ -26,7 +26,7 @@ const LogoBadgeContainer = (props) => {
       {techs.map((tech) => (
         <div
           key={tech}
-          className="h-12 sm:h-20  flex aspect-square rounded-full hover:scale-125"
+          className="h-10 sm:h-20  flex aspect-square rounded-full hover:scale-125"
         >
           <img
             src={logos[tech]}
