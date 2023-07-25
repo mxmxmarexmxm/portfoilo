@@ -5,7 +5,7 @@ const Project = (props) => {
   const {
     title,
     name,
-    desktopImgUrl,
+    projectImg,
     description,
     url,
     techs,
@@ -25,7 +25,7 @@ const Project = (props) => {
             noPhoneImg ? 'sm:ml-0' : ''
           }`}
         >
-          <img src={desktopImgUrl} className="w-full" alt={`pc-${name}`} />
+          <img src={projectImg} className="w-full" alt={`pc-${name}`} />
         </div>
       </div>
       <LogoBadgeContainer techs={techs} />
