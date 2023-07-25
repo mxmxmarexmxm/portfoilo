@@ -39,6 +39,7 @@ const projects = [
     title: 'SHORT CONTENT BLOCKER',
     name: 'AntiReels',
     desktopImgUrl: antiReels,
+    noPhoneImg: true,
     description:
       'AntiReels is a simple extension for Firefox and Chrome that helps you stay focused and productive by blocking short content from Facebook, Instagram, TikTok and YouTube. ',
     github: 'https://github.com/mxmxmarexmxm/AntiReels',
