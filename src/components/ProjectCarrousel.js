@@ -27,7 +27,7 @@ const ProjectCarrousel = () => {
   };
 
   return (
-    <div className="flex flex-col h-screen relative border-2">
+    <div className="flex flex-col items-center justify-center h-[90vh] relative">
       <div className="flex items-center justify-between sm:px-4">
         <button onClick={() => carrouselHandler('backward')}>
           <Backward className="cursor-pointer w-8 sm:w-24 absolute top-1/3 left-2" />
@@ -40,13 +40,13 @@ const ProjectCarrousel = () => {
         </button>
       </div>
 
-      <div className="bg-gray-500 w-64 h-8 self-center rounded-2xl flex justify-start overflow-hidden border-2 border-gray-700 mt-8">
+      {/* <div className="bg-gray-500 w-64 h-8 self-center rounded-2xl flex justify-start overflow-hidden border-2 border-gray-700 mt-8">
         <div
           className={`w-[${
             ((project + 1) / projectLength) * 100
           }%] bg-gray-600 h-full border-r-2 border-gray-700`}
         ></div>
-      </div>
+      </div> */}
     </div>
   );
 };
