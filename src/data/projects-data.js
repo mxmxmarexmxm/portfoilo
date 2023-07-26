@@ -11,7 +11,7 @@ const projects = [
     projectImg: maske,
     description:
       'Online store for selling mobile devices equipment, especially for covers.',
-    url: 'https://maske.rs/',
+    liveUrl: 'https://maske.rs/',
     techs: ['react', 'next', 'tailwind', 'graphql'],
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     projectImg: wartung,
     description:
       'Wartung is a comprehensive CMS tailored for businesses, offering seamless content creation, editing, and management capabilities. ',
-    url: 'https://app.asm-wartung.de/',
+    liveUrl: 'https://app.asm-wartung.de/',
     techs: ['react', 'tailwind'],
   },
   {
@@ -29,8 +29,8 @@ const projects = [
     projectImg: chatFlix,
     description:
       'ChatFilx is an IT-focused chat application that fosters collaborative discussions and knowledge sharing among professionals in a user-friendly environment.',
-    url: 'https://mxmxmarexmxm.github.io/ChatFlix/',
-    github: 'https://github.com/mxmxmarexmxm/ChatFlix',
+    liveUrl: 'https://mxmxmarexmxm.github.io/ChatFlix/',
+    githubUrl: 'https://github.com/mxmxmarexmxm/ChatFlix',
     techs: ['react', 'css', 'firebase'],
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     noPhoneImg: true,
     description:
       'AntiReels is a simple extension for Firefox and Chrome that helps you stay focused and productive by blocking short content from Facebook, Instagram, TikTok and YouTube. ',
-    github: 'https://github.com/mxmxmarexmxm/AntiReels',
+      githubUrl: 'https://github.com/mxmxmarexmxm/AntiReels',
     techs: ['html', 'css', 'js'],
   },
   {
@@ -49,8 +49,8 @@ const projects = [
     projectImg: itQuiz,
     description:
       'IT Quiz is a simple quiz application. It provides a collection of IT-related questions and allows users to test their knowledge in various IT domains.',
-    url: 'https://mxmxmarexmxm.github.io/it-quiz/',
-    github: 'https://github.com/mxmxmarexmxm/it-quiz',
+    liveUrl: 'https://mxmxmarexmxm.github.io/it-quiz/',
+    githubUrl: 'https://github.com/mxmxmarexmxm/it-quiz',
     techs: ['react', 'css'],
   },
 ];

@@ -1,5 +1,7 @@
 import React from 'react';
 import LogoBadgeContainer from './ui/logo-badge-container';
+import githubLogo from '../assets/img/logo/github.png';
+import livewebLogo from '../assets/img/logo/liveweb.png';
 
 const Project = (props) => {
   const {
@@ -7,16 +9,16 @@ const Project = (props) => {
     name,
     projectImg,
     description,
-    url,
+    liveUrl,
     techs,
-    github,
+    githubUrl,
     noPhoneImg,
   } = props;
 
   return (
     <div className="flex flex-col">
       <div className="text-center font-bold">
-        <span className="text-gray-500 ">{title}</span>
+        <span className="text-gray-500 bg-black p-2">{title}</span>
         <h2 className="text-5xl font-bold">{name}</h2>
       </div>
       <div className="flex justify-center my-4 w-full items-center overflow-hidden">
@@ -29,25 +31,28 @@ const Project = (props) => {
         </div>
       </div>
       <LogoBadgeContainer techs={techs} />
-      <div className="flex-1 text-center">
-        <p className="my-5">{description}</p>
-        <a
-          href={url}
-          target="_blanc"
-          className="text-blue-500 visited:text-blue-300 my-8"
-        >
-          Visit the app
-        </a>
-        {github && (
-          <a
-            href={github}
-            target="_blanc"
-            className="text-blue-500 visited:text-blue-300 my-8 block"
-          >
-            Github
+      <div className="flex-1 text-center flex justify-between items-center my-8">
+        <div>
+          <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              src={livewebLogo}
+              className="invert h-16"
+              alt={`${name}-live`}
+            />
           </a>
-        )}
+        </div>
+        <p className=" max-w-[50%]">{description}</p>
+        <div>
+          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+            <img
+              src={githubLogo}
+              className="invert h-16"
+              alt={`${name}-github`}
+            />
+          </a>
+        </div>
       </div>
+      {/* </div> */}
     </div>
   );
 };
