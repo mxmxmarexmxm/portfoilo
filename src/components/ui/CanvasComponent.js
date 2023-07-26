@@ -7,7 +7,7 @@ const CanvasComponent = () => {
   useEffect(() => {
     const state = {
       fps: 23,
-      color: '#8a7f7f',
+      color: '#292727',
       charset: 'M',
       size: 10,
     };
