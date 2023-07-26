@@ -36,17 +36,21 @@ const Project = (props) => {
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <img
               src={livewebLogo}
-              className="invert h-16"
+              className={`invert h-16 ${
+                !liveUrl ? 'blur-sm cursor-not-allowed' : ''
+              }`}
               alt={`${name}-live`}
             />
           </a>
         </div>
-        <p className=" max-w-[50%]">{description}</p>
+        <p className="max-w-[50%]">{description}</p>
         <div>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             <img
               src={githubLogo}
-              className="invert h-16"
+              className={`invert h-16 ${
+                !githubUrl ? 'blur-sm cursor-not-allowed' : ''
+              }`}
               alt={`${name}-github`}
             />
           </a>
