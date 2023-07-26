@@ -27,16 +27,16 @@ const ProjectCarrousel = () => {
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-screen relative border-2">
       <div className="flex items-center justify-between sm:px-4">
         <button onClick={() => carrouselHandler('backward')}>
-          <Backward className="  cursor-pointer w-8 sm:w-24" />
+          <Backward className="cursor-pointer w-8 sm:w-24 absolute top-1/3 left-2" />
         </button>
 
         <Project {...projectsData[project]} />
 
         <button onClick={() => carrouselHandler('forward')}>
-          <Forward className=" cursor-pointer w-8 sm:w-24" />
+          <Forward className="cursor-pointer w-8 sm:w-24 absolute top-1/3 right-2" />
         </button>
       </div>
 
