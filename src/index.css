@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -18,3 +22,6 @@ code {
     monospace;
 }
 
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
