@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <nav className="smooth-scroll">
-      <ul className="flex fixed top-0 right-0 gap-8 bg-black w-full justify-end px-8 py-4 font-semibold text-xl">
+      <ul className="flex fixed top-0 right-0 gap-8 bg-black w-full justify-end px-8 py-4 font-semibold text-xl z-50">
         <li className="cursor-pointer">
           <a href="#about-me">About Me</a>
         </li>
