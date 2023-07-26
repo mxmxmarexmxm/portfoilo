@@ -13,6 +13,7 @@ const CanvasComponent = () => {
     };
 
     const gui = new datGui.GUI();
+    gui.hide();
     const fpsCtrl = gui.add(state, 'fps').min(1).max(120).step(1);
     gui.addColor(state, 'color');
     gui.add(state, 'charset');
