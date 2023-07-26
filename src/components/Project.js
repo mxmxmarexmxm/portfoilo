@@ -15,6 +15,8 @@ const Project = (props) => {
     noPhoneImg,
   } = props;
 
+  console.log(noPhoneImg);
+
   return (
     <div className="flex flex-col">
       <div className="text-center font-bold">
@@ -23,8 +25,8 @@ const Project = (props) => {
       </div>
       <div className="flex justify-center my-4 w-full items-center overflow-hidden">
         <div
-          className={`w-9/12 sm:w-full mr-4 sm:mr-6 sm:ml-36 ${
-            noPhoneImg ? 'sm:ml-0' : ''
+          className={`w-9/12 sm:w-full mr-4 sm:mr-6  ${
+            noPhoneImg ? 'sm:w-11/12' : 'sm:ml-36'
           }`}
         >
           <img src={projectImg} className="w-full" alt={`pc-${name}`} />
