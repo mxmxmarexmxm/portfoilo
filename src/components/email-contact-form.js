@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import githubLogo from '../assets/img/logo/github.png';
+import linkedinLogo from '../assets/img/logo/linkedin.png';
 
 const EmailContactForm = () => {
   const form = useRef();
@@ -28,7 +30,7 @@ const EmailContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="text-white bg-gray-700 flex flex-col p-4 sm:p-16 sm:w-1/2 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
+      className="text-white bg-gray-700 flex flex-col p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
     >
       <label className="font-bold text-xl">Name</label>
       <input
@@ -58,6 +60,36 @@ const EmailContactForm = () => {
         value="Send"
         className="text-white p-4 mt-4 text-xl rounded-lg bg-zinc-900 font-bold cursor-pointer border-4 border-gray-600"
       />
+      <div className="flex h-14 justify-center gap-4 mt-8">
+        <div className="flex">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/mxmxmarexmxm"
+            className="w-auto h-12"
+          >
+            <img
+              src={githubLogo}
+              className="h-full invert"
+              alt="linkedin-logo"
+            />
+          </a>
+        </div>
+        <div className="flex">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/marinko-malencic/"
+            className="w-auto h-12"
+          >
+            <img
+              src={linkedinLogo}
+              className="h-full invert"
+              alt="linkedin-logo"
+            />
+          </a>
+        </div>
+      </div>
     </form>
   );
 };
