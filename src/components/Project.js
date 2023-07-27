@@ -21,7 +21,7 @@ const Project = (props) => {
     <div className="flex flex-col">
       <div className="text-center font-bold">
         <span className="text-gray-500 bg-black p-2">{title}</span>
-        <h2 className="text-5xl font-bold">{name}</h2>
+        <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
       </div>
       <div className="flex justify-center my-4 w-full items-center overflow-hidden">
         <div
