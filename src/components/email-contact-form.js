@@ -30,7 +30,7 @@ const EmailContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="text-white bg-gray-700 flex flex-col p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
+      className="text-white bg-gray-700 flex w-full mx-4 flex-col p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
     >
       <label className="font-bold text-xl">Name</label>
       <input
@@ -51,7 +51,7 @@ const EmailContactForm = () => {
       <label className="font-bold text-xl">Message</label>
       <textarea
         name="message"
-        className="text-black h-48 rounded-lg p-4"
+        className="text-black sm:h-48 h-32 rounded-lg p-4"
         placeholder="Type your message here."
         required
       />
