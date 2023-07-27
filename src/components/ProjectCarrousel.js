@@ -30,13 +30,13 @@ const ProjectCarrousel = () => {
     <div className="flex flex-col items-center justify-center h-[90vh] relative w-full">
       <div className="flex items-start justify-between sm:px-4 min-h-[60%]">
         <button onClick={() => carrouselHandler('backward')}>
-          <Backward className="cursor-pointer w-8 sm:w-24 absolute top-1/3 left-2" />
+          <Backward className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] xl:top-1/3 left-2" />
         </button>
 
         <Project {...projectsData[project]} />
 
         <button onClick={() => carrouselHandler('forward')}>
-          <Forward className="cursor-pointer w-8 sm:w-24 absolute top-1/3 right-2" />
+          <Forward className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] xl:top-1/3 right-2" />
         </button>
       </div>
 
