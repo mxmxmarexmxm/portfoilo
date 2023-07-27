@@ -38,8 +38,8 @@ const Project = (props) => {
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <img
               src={livewebLogo}
-              className={`invert h-16 ${
-                !liveUrl ? 'blur-sm cursor-not-allowed' : ''
+              className={`invert h-10 sm:h-20 ${
+                !liveUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               alt={`${name}-live`}
             />
@@ -50,8 +50,8 @@ const Project = (props) => {
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             <img
               src={githubLogo}
-              className={`invert h-16 ${
-                !githubUrl ? 'blur-sm cursor-not-allowed' : ''
+              className={`invert h-10 sm:h-20  ${
+                !githubUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               alt={`${name}-github`}
             />
