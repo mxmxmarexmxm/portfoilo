@@ -25,7 +25,7 @@ const Project = (props) => {
       </div>
       <div className="flex justify-center my-4 w-full items-center overflow-hidden">
         <div
-          className={`w-9/12  mr-4 sm:mr-6  ${!noPhoneImg ? 'sm:ml-36' : ''}`}
+          className={`w-9/12  mr-4 sm:mr-6  ${!noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''}`}
         >
           <img src={projectImg} className="w-full" alt={`pc-${name}`} />
         </div>
