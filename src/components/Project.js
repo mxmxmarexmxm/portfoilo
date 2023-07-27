@@ -18,7 +18,7 @@ const Project = (props) => {
   console.log(noPhoneImg);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-[90%]">
       <div className="text-center font-bold">
         <span className="text-gray-500 bg-black p-2">{title}</span>
         <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
@@ -31,7 +31,7 @@ const Project = (props) => {
         </div>
       </div>
       <LogoBadgeContainer techs={techs} />
-      <div className="flex-1 text-center flex justify-between items-center my-8">
+      <div className="flex-1 text-center flex justify-between items-center my-8 px-2">
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <img
@@ -43,7 +43,7 @@ const Project = (props) => {
             />
           </a>
         </div>
-        <p className="max-w-[50%]">{description}</p>
+        <p className="sm:max-w-[50%] max-w-[65%]">{description}</p>
         <div>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             <img
