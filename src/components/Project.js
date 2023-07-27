@@ -31,7 +31,7 @@ const Project = (props) => {
         </div>
       </div>
       <LogoBadgeContainer techs={techs} />
-      <div className="flex-1 text-center flex justify-between items-center my-8 px-2">
+      <div className="text-center md:w-[70vw] mx-auto flex justify-between items-center my-8 px-2">
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <img
