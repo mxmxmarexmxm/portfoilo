@@ -15,8 +15,6 @@ const Project = (props) => {
     noPhoneImg,
   } = props;
 
-  console.log(noPhoneImg);
-
   return (
     <div className="flex flex-col min-h-[90%]">
       <div className="text-center font-bold">
