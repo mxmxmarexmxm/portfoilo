@@ -5,7 +5,7 @@ import Work from './work';
 
 const Home = () => {
   return (
-    <div className="w-full h-full flex flex-col gap-16">
+    <div className="w-full h-full flex flex-col gap-16 z-10">
       <div id="about-me">
         <AboutMe />
       </div>
