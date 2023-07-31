@@ -50,6 +50,7 @@ const Modal = (props) => {
               className="text-black"
               name="charset"
               value={formState.charset}
+              disabled={!formState.animation}
               onChange={handleInputChange}
             />
           </div>
@@ -60,6 +61,7 @@ const Modal = (props) => {
               type="number"
               name="fps"
               value={formState.fps}
+              disabled={!formState.animation}
               onChange={handleInputChange}
             />
           </div>
@@ -70,6 +72,7 @@ const Modal = (props) => {
               type="number"
               name="size"
               value={formState.size}
+              disabled={!formState.animation}
               onChange={handleInputChange}
             />
           </div>
@@ -80,6 +83,7 @@ const Modal = (props) => {
               type="color"
               name="color"
               value={formState.color}
+              disabled={!formState.animation}
               onChange={handleInputChange}
             />
           </div>
