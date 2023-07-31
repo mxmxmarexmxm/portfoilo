@@ -38,19 +38,14 @@ const Modal = (props) => {
               onChange={handleInputChange}
             />
           </div>
-          {/* <label htmlFor="fps">Frame</label>
-          <input
-            className="text-black"
-            type="number"
-            name="fps"
-            defaultValue={15}
-          ></input>
           <label htmlFor="color">Color</label>
           <input
             className="text-black"
+            type="color"
             name="color"
-            defaultValue="#ffffff"
-          ></input> */}
+            value={formState.color}
+            onChange={handleInputChange}
+          />
           <div className="flex gap-4 justify-center h-12">
             <button
               type="button"
