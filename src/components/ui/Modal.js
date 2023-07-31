@@ -76,16 +76,18 @@ const Modal = (props) => {
               onChange={handleInputChange}
             />
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <label htmlFor="color">Color</label>
-            <input
-              className="text-black"
-              type="color"
-              name="color"
-              value={formState.color}
-              disabled={!formState.animation}
-              onChange={handleInputChange}
-            />
+            <div className="rounded-full border-2 border-white overflow-hidden w-10 h-10">
+              <input
+                className="text-black cursor-pointer w-[200%] h-[200%]"
+                type="color"
+                name="color"
+                value={formState.color}
+                disabled={!formState.animation}
+                onChange={handleInputChange}
+              />
+            </div>
           </div>
           <div className="flex gap-4 justify-center h-12">
             <button
