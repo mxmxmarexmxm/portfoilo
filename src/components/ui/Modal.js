@@ -47,7 +47,7 @@ const Modal = (props) => {
             <label htmlFor="charset">Charset</label>
             <input
               type="text"
-              className="text-black"
+              className="text-black p-1 font-normal text-base rounded-md"
               name="charset"
               value={formState.charset}
               disabled={!formState.animation}
@@ -57,7 +57,7 @@ const Modal = (props) => {
           <div className="flex justify-between">
             <label htmlFor="fps">Frame</label>
             <input
-              className="text-black"
+              className="text-black p-1 font-normal text-base text-right rounded-md"
               type="number"
               name="fps"
               value={formState.fps}
@@ -68,7 +68,7 @@ const Modal = (props) => {
           <div className="flex justify-between">
             <label htmlFor="fps">Size</label>
             <input
-              className="text-black"
+              className="text-black p-1 font-normal text-base text-right rounded-md"
               type="number"
               name="size"
               value={formState.size}
