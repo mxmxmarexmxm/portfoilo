@@ -12,7 +12,12 @@ const Modal = (props) => {
 
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
-    const newValue = type === 'checkbox' ? checked : value;
+    const newValue =
+      type === 'checkbox'
+        ? checked
+        : type === 'number'
+        ? parseInt(value)
+        : value;
 
     setFormState((prevState) => ({
       ...prevState,
@@ -42,7 +47,7 @@ const Modal = (props) => {
             <label htmlFor="charset">Charset</label>
             <input
               type="text"
-              className='text-black'
+              className="text-black"
               name="charset"
               value={formState.charset}
               onChange={handleInputChange}
@@ -55,6 +60,16 @@ const Modal = (props) => {
               type="number"
               name="fps"
               value={formState.fps}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="flex justify-between">
+            <label htmlFor="fps">Size</label>
+            <input
+              className="text-black"
+              type="number"
+              name="size"
+              value={formState.size}
               onChange={handleInputChange}
             />
           </div>
