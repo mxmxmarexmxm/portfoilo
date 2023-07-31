@@ -39,6 +39,16 @@ const Modal = (props) => {
             />
           </div>
           <div className="flex justify-between">
+            <label htmlFor="charset">Charset</label>
+            <input
+              type="text"
+              className='text-black'
+              name="charset"
+              value={formState.charset}
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="flex justify-between">
             <label htmlFor="fps">Frame</label>
             <input
               className="text-black"
