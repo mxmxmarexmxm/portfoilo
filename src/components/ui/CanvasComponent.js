@@ -4,13 +4,23 @@ import * as datGui from 'dat.gui';
 const CanvasComponent = (props) => {
   const canvasRef = useRef(null);
   const { settings } = props;
-  const [intervalId, setIntervalId] = useState(null); // New state for interval ID
+  const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
     // Create a new dat.gui instance with the updated settings
     const gui = new datGui.GUI();
     gui.hide();
-    const fpsCtrl = gui.add(settings, 'fps').min(1).max(120).step(1);
+
+    // Use add() without chaining and manually set min, max, and step for FPS
+    const fpsCtrl = gui.add(settings, 'fps');
+    const fpsMin = 1;
+    const fpsMax = 120;
+    const fpsStep = 1;
+    fpsCtrl.__min = fpsMin;
+    fpsCtrl.__max = fpsMax;
+    fpsCtrl.__step = fpsStep;
+    fpsCtrl.updateDisplay();
+
     gui.addColor(settings, 'color');
     gui.add(settings, 'charset');
     const sizeCtrl = gui.add(settings, 'size').min(1).max(120).step(1);
@@ -47,7 +57,6 @@ const CanvasComponent = (props) => {
     if (intervalId) {
       clearInterval(intervalId);
     }
-
     // Set a new interval for the canvas animation
     const newIntervalId = setInterval(draw, 1000 / settings.fps);
     setIntervalId(newIntervalId);
@@ -61,9 +70,12 @@ const CanvasComponent = (props) => {
         clearInterval(intervalId);
       }
     };
+    // eslint-disable-next-line
   }, [settings]);
 
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full" />;
+  return (
+    <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full" />
+  );
 };
 
 export default CanvasComponent;
