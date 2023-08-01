@@ -16,7 +16,7 @@ const Navbar = (props) => {
           <a href="#contact">Contact</a>
         </li>
         <li className="cursor-pointer" onClick={openSettings}>
-          <Settings className="cursor-pointer w-8" />
+          <Settings className="cursor-pointer w-6 sm:w-8" />
         </li>
       </ul>
     </nav>
