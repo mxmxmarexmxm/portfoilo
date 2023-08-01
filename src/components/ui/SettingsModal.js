@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Toggle from './Toggle';
 
 const defaultValues = {
@@ -38,6 +38,20 @@ const SettingsModal = (props) => {
       [name]: newValue,
     }));
   };
+
+  // Close modal on escape button
+  const handleEscapeKeyPress = (event) => {
+    if (event.key === 'Escape') {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('keydown', handleEscapeKeyPress);
+    return () => {
+      document.removeEventListener('keydown', handleEscapeKeyPress);
+    };
+  }, []);
 
   return (
     <div className="text-white fixed h-full w-full z-50 flex items-center justify-center bg-[rgba(0,0,0,0.9)] ">
