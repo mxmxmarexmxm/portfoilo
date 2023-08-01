@@ -1,4 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+
+const defaultValues = {
+  fps: 23,
+  color: '#292727',
+  charset: 'M',
+  size: 12,
+  animation: true,
+};
 
 const Modal = (props) => {
   const { setIsOpen, setSettings, settings } = props;
@@ -8,6 +16,11 @@ const Modal = (props) => {
     event.preventDefault();
     setSettings(formState);
     setIsOpen(false);
+  };
+
+  const resetToDefaultValues = () => {
+    setSettings(defaultValues); // Reset the formState to the default settings
+    setIsOpen(false); // Close the modal
   };
 
   const handleInputChange = (event) => {
@@ -98,6 +111,13 @@ const Modal = (props) => {
               onClick={() => setIsOpen(false)}
             >
               Cancel
+            </button>
+            <button
+              type="button"
+              className="w-32 bg-gray-900 rounded-xl"
+              onClick={() => resetToDefaultValues()}
+            >
+              default
             </button>
             <button type="submit" className="w-32 bg-gray-600 rounded-xl">
               Ok
