@@ -8,7 +8,7 @@ const defaultValues = {
   animation: true,
 };
 
-const Modal = (props) => {
+const SettingsModal = (props) => {
   const { setIsOpen, setSettings, settings } = props;
   const [formState, setFormState] = useState(settings);
 
@@ -129,4 +129,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal;
+export default SettingsModal;
