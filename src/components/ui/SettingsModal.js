@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Toggle from './Toggle';
 
 const defaultValues = {
   fps: 23,
@@ -48,16 +49,16 @@ const SettingsModal = (props) => {
           onSubmit={handleSubmit}
           className="flex flex-col justify-between flex-1 gap-4 sm:text-xl font-bold"
         >
-          <div className="flex justify-between">
-            <label htmlFor="animation">Background animation</label>
-            <input
-              className="w-6"
-              type="checkbox"
-              name="animation"
-              checked={formState.animation}
-              onChange={handleInputChange}
-            />
-          </div>
+          <Toggle
+            label="Background animation"
+            defaultOn={formState.animation}
+            onChange={(newValue) =>
+              setFormState((prevState) => ({
+                ...prevState,
+                animation: newValue,
+              }))
+            }
+          />
           <div className="flex justify-between">
             <label htmlFor="charset">Charset</label>
             <input
