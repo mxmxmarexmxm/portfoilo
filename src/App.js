@@ -2,7 +2,8 @@ import { useState } from 'react';
 import Navbar from './components/ui/Navbar';
 import Layout from './components/ui/layout';
 import Home from './pages/Home';
-import SettingsModal from './components/ui/SettingsModal';
+import Settings from './components/Settings';
+import Modal from './components/ui/Modal';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -17,11 +18,13 @@ function App() {
   return (
     <>
       {openModal && (
-        <SettingsModal
-          setIsOpen={setOpenModal}
-          setSettings={setSettings}
-          settings={settings}
-        />
+        <Modal setIsOpen={setOpenModal}>
+          <Settings
+            setIsOpen={setOpenModal}
+            setSettings={setSettings}
+            settings={settings}
+          />
+        </Modal>
       )}
       <Layout settings={settings}>
         <Navbar openSettings={() => setOpenModal(true)} />
