@@ -32,7 +32,8 @@ const CanvasComponent = (props) => {
 
       p = Array(Math.ceil(w / settings.size)).fill(0);
     };
-    window.addEventListener('resize', resize);
+    // window.addEventListener('resize', resize);
+    window.addEventListener('orientationchange', resize);
     sizeCtrl.onFinishChange((s) => resize());
     resize();
 
@@ -64,7 +65,8 @@ const CanvasComponent = (props) => {
     // Cleanup the dat.gui instance and event listeners when the component is unmounted
     return () => {
       gui.destroy();
-      window.removeEventListener('resize', resize);
+      // window.removeEventListener('resize', resize);
+      window.removeEventListener('orientationchange', resize);
       // Clear the interval when the component is unmounted
       if (intervalId) {
         clearInterval(intervalId);
