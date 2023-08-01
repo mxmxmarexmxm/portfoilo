@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navbar from './components/ui/Navbar';
 import Layout from './components/ui/layout';
 import Home from './pages/Home';
-import Modal from './components/ui/Modal';
+import SettingsModal from './components/ui/SettingsModal';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       {openModal && (
-        <Modal
+        <SettingsModal
           setIsOpen={setOpenModal}
           setSettings={setSettings}
           settings={settings}
