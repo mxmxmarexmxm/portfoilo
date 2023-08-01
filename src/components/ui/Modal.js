@@ -104,6 +104,13 @@ const Modal = (props) => {
               />
             </div>
           </div>
+          <button
+            type="button"
+            className="w-32 rounded-xl self-center"
+            onClick={() => resetToDefaultValues()}
+          >
+            Default
+          </button>
           <div className="flex gap-4 justify-center h-12 mt-6">
             <button
               type="button"
@@ -111,13 +118,6 @@ const Modal = (props) => {
               onClick={() => setIsOpen(false)}
             >
               Cancel
-            </button>
-            <button
-              type="button"
-              className="w-32 bg-gray-900 rounded-xl"
-              onClick={() => resetToDefaultValues()}
-            >
-              default
             </button>
             <button type="submit" className="w-32 bg-gray-600 rounded-xl">
               Ok
