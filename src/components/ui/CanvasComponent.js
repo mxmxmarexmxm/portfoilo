@@ -46,7 +46,9 @@ const CanvasComponent = () => {
 
     const draw = () => {
       const ctx = canvasRef.current.getContext('2d');
-
+      if (!settings.animation) {
+        return;
+      }
       ctx.fillStyle = 'rgba(0,0,0,.05)';
       ctx.fillRect(0, 0, w, h);
       ctx.fillStyle = settings.color;
