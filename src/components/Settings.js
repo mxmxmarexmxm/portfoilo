@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Toggle from './ui/Toggle';
+import { SettingsContext } from '../context/SettingsContext';
 
 const defaultValues = {
   fps: 23,
@@ -10,8 +11,9 @@ const defaultValues = {
 };
 
 const Settings = (props) => {
-  const { setIsOpen, setSettings, settings } = props;
   const [formState, setFormState] = useState(settings);
+  const { settings, setSettings } = useContext(SettingsContext);
+  const { setIsOpen } = props;
 
   const handleSubmit = (event) => {
     event.preventDefault();
