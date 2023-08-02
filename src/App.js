@@ -4,33 +4,25 @@ import Layout from './components/ui/layout';
 import Home from './pages/Home';
 import Settings from './components/Settings';
 import Modal from './components/ui/Modal';
+import SettingsProvider from './context/SettingsContext';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
-  const [settings, setSettings] = useState({
-    fps: 23,
-    color: '#292727',
-    charset: 'M',
-    size: 12,
-    animation: true,
-  });
 
   return (
-    <>
+    <SettingsProvider>
       {openModal && (
         <Modal setIsOpen={setOpenModal}>
           <Settings
             setIsOpen={setOpenModal}
-            setSettings={setSettings}
-            settings={settings}
           />
         </Modal>
       )}
-      <Layout settings={settings}>
+      <Layout>
         <Navbar openSettings={() => setOpenModal(true)} />
         <Home />
       </Layout>
-    </>
+    </SettingsProvider>
   );
 }
 
