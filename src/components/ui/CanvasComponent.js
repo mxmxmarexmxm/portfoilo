@@ -1,15 +1,16 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useContext } from 'react';
 import * as datGui from 'dat.gui';
+import { SettingsContext } from '../../context/SettingsContext';
 
-const CanvasComponent = (props) => {
+const CanvasComponent = () => {
   const canvasRef = useRef(null);
-  const { settings } = props;
+  const { settings } = useContext(SettingsContext);
   const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {
-    // Create a new dat.gui instance with the updated settings
     let aproxPhoneWidth = 500;
 
+    // Create a new dat.gui instance with the updated settings
     const gui = new datGui.GUI();
     gui.hide();
 
