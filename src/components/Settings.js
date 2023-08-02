@@ -11,8 +11,8 @@ const defaultValues = {
 };
 
 const Settings = (props) => {
-  const [formState, setFormState] = useState(settings);
   const { settings, setSettings } = useContext(SettingsContext);
+  const [formState, setFormState] = useState(settings);
   const { setIsOpen } = props;
 
   const handleSubmit = (event) => {
