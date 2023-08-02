@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import LogoBadgeContainer from './ui/logo-badge-container';
 import githubLogo from '../assets/img/logo/github.png';
 import livewebLogo from '../assets/img/logo/liveweb.png';
+import { SettingsContext } from '../context/SettingsContext';
 
 const Project = (props) => {
+  const { settings } = useContext(SettingsContext);
   const {
     title,
     name,
@@ -15,6 +17,8 @@ const Project = (props) => {
     noPhoneImg,
   } = props;
 
+  const isGrid = settings.projectsLayout === 'grid';
+
   return (
     <div className="flex flex-col min-h-[90%]">
       <div className="text-center font-bold">
@@ -23,18 +27,20 @@ const Project = (props) => {
       </div>
       <div className="flex justify-center my-4 w-full items-center overflow-hidden">
         <div
-          className={`w-9/12  mr-4 sm:mr-6  ${!noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''}`}
+          className={`w-9/12  mr-4 sm:mr-6  ${
+            !noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''
+          }`}
         >
           <img src={projectImg} className="w-full" alt={`pc-${name}`} />
         </div>
       </div>
       <LogoBadgeContainer techs={techs} />
-      <div className="text-center md:w-[70vw] mx-auto flex justify-between items-center my-8 px-2">
+      <div className="text-center md:w-[100%] mx-auto flex justify-between items-center my-8 px-2">
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <img
               src={livewebLogo}
-              className={`invert h-10 sm:h-20 ${
+              className={`invert h-10 ${isGrid ? 'sm:h-14' : 'sm:h-20'} ${
                 !liveUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               alt={`${name}-live`}
@@ -47,6 +53,8 @@ const Project = (props) => {
             <img
               src={githubLogo}
               className={`invert h-10 sm:h-20  ${
+                isGrid ? 'sm:h-14' : 'sm:h-20'
+              } ${
                 !githubUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               alt={`${name}-github`}
