@@ -1,16 +1,18 @@
 import React from 'react';
 
 const Toggle = ({ label, defaultOn, onChange }) => {
+  const inputId = `toggle-${label.replace(/\s+/g, '').toLowerCase()}`; // Generate a unique input id
+
   return (
     <div className="flex items-center justify-between w-full">
       <label
-        htmlFor="toggle"
+        htmlFor={inputId}
         className="flex items-center justify-between cursor-pointer w-full"
       >
         <span className="text-white flex-1">{label}</span>
         <div className="relative flex">
           <input
-            id="toggle"
+            id={inputId}
             type="checkbox"
             className="sr-only"
             checked={defaultOn}
