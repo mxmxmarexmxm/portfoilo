@@ -9,7 +9,9 @@ const SettingsProvider = ({ children }) => {
     charset: 'M',
     size: 12,
     animation: true,
+    projectsLayout: 'carousel',
   });
+  
   return (
     <SettingsContext.Provider value={{ settings, setSettings }}>
       {children}

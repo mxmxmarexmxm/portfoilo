@@ -8,6 +8,7 @@ const defaultValues = {
   charset: 'M',
   size: 12,
   animation: true,
+  projectsLayout: 'carousel',
 };
 
 const Settings = (props) => {
@@ -106,6 +107,16 @@ const Settings = (props) => {
             />
           </div>
         </div>
+        <Toggle
+          label="Projects Layout (Grid / Carousel)"
+          defaultOn={formState.projectsLayout === 'carousel'}
+          onChange={(newValue) =>
+            setFormState((prevState) => ({
+              ...prevState,
+              projectsLayout: newValue ? 'carousel' : 'grid',
+            }))
+          }
+        />
         <button
           type="button"
           className="w-32 rounded-xl self-center"
