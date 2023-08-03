@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { SettingsContext } from '../../context/SettingsContext';
 
 const Modal = (props) => {
+  const { settings } = useContext(SettingsContext);
   const { setIsOpen } = props;
 
   // Close modal on escape button
@@ -19,7 +21,10 @@ const Modal = (props) => {
   }, []);
 
   return (
-    <div className="text-white fixed h-full w-full z-50 flex items-center justify-center bg-[rgba(0,0,0,0.9)] ">
+    <div
+      className=" fixed h-full w-full z-50 flex items-center justify-center bg-[rgba(0,0,0,0.9)] "
+      style={{ color: settings.primaryTextColor }}
+    >
       <div className="bg-gray-800 opacity-100 sm:w-[550px] w-[95%] aspect-square rounded-2xl flex flex-col sm:py-8 sm:px-12 p-4">
         {props.children}
       </div>

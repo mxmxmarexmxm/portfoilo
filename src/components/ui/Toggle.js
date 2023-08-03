@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SettingsContext } from '../../context/SettingsContext';
 
 const Toggle = ({ label, defaultOn, onChange }) => {
+  const { settings } = useContext(SettingsContext);
   const inputId = `toggle-${label.replace(/\s+/g, '').toLowerCase()}`; // Generate a unique input id
 
   return (
-    <div className="flex items-center justify-between w-full">
+    <div className="flex items-center justify-between w-full"
+    style={{ color: settings.primaryTextColor }}
+    >
       <label
         htmlFor={inputId}
         className="flex items-center justify-between cursor-pointer w-full"
