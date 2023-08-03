@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import LogoBadgeContainer from './ui/logo-badge-container';
-import githubLogo from '../assets/img/logo/github.png';
-import livewebLogo from '../assets/img/logo/liveweb.png';
 import { SettingsContext } from '../context/SettingsContext';
+import LiveWebIcon from '../assets/icons/liveweb';
+import GithubIcon from '../assets/icons/github';
 
 const Project = (props) => {
   const { settings } = useContext(SettingsContext);
@@ -47,31 +47,26 @@ const Project = (props) => {
       >
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-            <img
-              src={livewebLogo}
-              className={`invert h-10 ${isGrid ? 'sm:h-14' : 'sm:h-20'} ${
+            <LiveWebIcon
+              className={`h-14 ${isGrid ? 'sm:h-14' : 'sm:h-28'} ${
                 !liveUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
-              alt={`${name}-live`}
+              color="white"
             />
           </a>
         </div>
         <p className="sm:max-w-[50%] max-w-[65%]">{description}</p>
         <div>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-            <img
-              src={githubLogo}
-              className={`invert h-10 sm:h-20  ${
-                isGrid ? 'sm:h-14' : 'sm:h-20'
-              } ${
+            <GithubIcon
+              className={`h-10 ${isGrid ? 'sm:h-14' : 'sm:h-20'} ${
                 !githubUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
-              alt={`${name}-github`}
+              color="white"
             />
           </a>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 };
