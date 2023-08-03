@@ -22,7 +22,9 @@ const Project = (props) => {
   return (
     <div className="flex flex-col min-h-[90%]">
       <div className="text-center font-bold">
-        <span className="text-gray-500 bg-black p-2">{title}</span>
+        <span className="bg-black p-2" style={{ color: settings.secondaryTextColor }}>
+          {title}
+        </span>
         <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
       </div>
       <div className="flex justify-center my-4 w-full items-center overflow-hidden">
