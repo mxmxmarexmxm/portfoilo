@@ -22,7 +22,10 @@ const Project = (props) => {
   return (
     <div className="flex flex-col min-h-[90%]">
       <div className="text-center font-bold">
-        <span className="bg-black p-2" style={{ color: settings.secondaryTextColor }}>
+        <span
+          className="bg-black p-2"
+          style={{ color: settings.secondaryTextColor }}
+        >
           {title}
         </span>
         <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
@@ -39,7 +42,7 @@ const Project = (props) => {
       <LogoBadgeContainer techs={techs} />
       <div
         className={`text-center ${
-          isGrid ? 'md:w-[100%]' : 'imd:w-[70vw]'
+          isGrid ? 'md:w-[100%]' : 'md:w-[70vw]'
         } mx-auto flex justify-between items-center my-8 px-2`}
       >
         <div>
