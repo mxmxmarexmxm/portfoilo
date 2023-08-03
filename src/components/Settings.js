@@ -99,9 +99,9 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="animationTextColor">Animation Text Color</label>
-          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center overflow-hidden justify-center w-10 h-10 ">
             <input
-              className="text-black cursor-pointer w-[200%] h-[200%] aspect-square"
+              className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
               name="animationTextColor"
               value={formState.animationTextColor}
@@ -114,7 +114,7 @@ const Settings = (props) => {
           <label htmlFor="backgroundColor">Background Color</label>
           <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
             <input
-              className="text-black cursor-pointer w-[200%] h-[200%] aspect-square"
+              className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
               name="backgroundColor"
               value={formState.backgroundColor}
@@ -127,7 +127,7 @@ const Settings = (props) => {
           <label htmlFor="primaryTextColor">Primary Text Color</label>
           <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
             <input
-              className="text-black cursor-pointer w-[200%] h-[200%] aspect-square"
+              className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
               name="primaryTextColor"
               value={formState.primaryTextColor}
@@ -139,7 +139,7 @@ const Settings = (props) => {
           <label htmlFor="secondaryTextColor">Secondary Text Color</label>
           <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
             <input
-              className="text-black cursor-pointer w-[200%] h-[200%] aspect-square"
+              className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
               name="secondaryTextColor"
               value={formState.secondaryTextColor}
