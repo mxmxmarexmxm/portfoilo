@@ -11,6 +11,7 @@ const defaultValues = {
   projectsLayout: 'carousel',
   primaryTextColor: '#ffffff',
   secondaryTextColor: '#6b7280',
+  backgroundColor: '#0000000D',
 };
 
 const Settings = (props) => {
@@ -104,6 +105,19 @@ const Settings = (props) => {
               type="color"
               name="color"
               value={formState.color}
+              disabled={!formState.animation}
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <label htmlFor="backgroundColor">Background Color</label>
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+            <input
+              className="text-black cursor-pointer w-[200%] h-[200%] aspect-square"
+              type="color"
+              name="backgroundColor"
+              value={formState.backgroundColor}
               disabled={!formState.animation}
               onChange={handleInputChange}
             />

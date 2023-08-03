@@ -12,6 +12,7 @@ const SettingsProvider = ({ children }) => {
     projectsLayout: 'carousel',
     primaryTextColor: '#ffffff',
     secondaryTextColor: '#6b7280',
+    backgroundColor: '#0000000D',
   });
 
   return (
