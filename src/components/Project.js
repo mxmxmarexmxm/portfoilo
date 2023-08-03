@@ -40,7 +40,7 @@ const Project = (props) => {
       <div
         className={`text-center ${
           isGrid ? 'md:w-[100%]' : 'imd:w-[70vw]'
-        } mx-auto flex justify-between items-center my-8 px-2 border-2`}
+        } mx-auto flex justify-between items-center my-8 px-2`}
       >
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
