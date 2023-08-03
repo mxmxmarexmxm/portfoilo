@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import Toggle from './ui/Toggle';
 import { SettingsContext } from '../context/SettingsContext';
+import Backward2 from '../assets/icons/liveweb';
 
 const defaultValues = {
   fps: 23,
@@ -12,6 +13,7 @@ const defaultValues = {
   primaryTextColor: '#ffffff',
   secondaryTextColor: '#6b7280',
   backgroundColor: '#0000000D',
+  iconsColor: '#ffffff',
 };
 
 const Settings = (props) => {
@@ -143,6 +145,18 @@ const Settings = (props) => {
               type="color"
               name="secondaryTextColor"
               value={formState.secondaryTextColor}
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <label htmlFor="iconsColor">Icons Color</label>
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+            <input
+              className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
+              type="color"
+              name="iconsColor"
+              value={formState.iconsColor}
               onChange={handleInputChange}
             />
           </div>

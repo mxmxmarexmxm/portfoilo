@@ -13,6 +13,7 @@ const SettingsProvider = ({ children }) => {
     primaryTextColor: '#ffffff',
     secondaryTextColor: '#6b7280',
     backgroundColor: '#0000000D',
+    iconsColor: '#ffffff',
   });
 
   return (
