@@ -10,7 +10,8 @@ const SettingsProvider = ({ children }) => {
     size: 12,
     animation: true,
     projectsLayout: 'carousel',
-    primaryTextColor: '#ffffff'
+    primaryTextColor: '#ffffff',
+    secondaryTextColor: '#6b7280',
   });
 
   return (
