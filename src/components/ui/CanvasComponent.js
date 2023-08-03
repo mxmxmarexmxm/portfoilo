@@ -24,7 +24,7 @@ const CanvasComponent = () => {
     fpsCtrl.__step = fpsStep;
     fpsCtrl.updateDisplay();
 
-    gui.addColor(settings, 'color');
+    gui.addColor(settings, 'animationTextColor');
     gui.add(settings, 'charset');
     const sizeCtrl = gui.add(settings, 'size').min(1).max(120).step(1);
 
@@ -52,7 +52,7 @@ const CanvasComponent = () => {
       }
       // ctx.fillStyle = 'rgba(0,0,0,.05)';
       ctx.fillRect(0, 0, w, h);
-      ctx.fillStyle = settings.color;
+      ctx.fillStyle = settings.animationTextColor;
 
       ctx.font = settings.size + 'px sans-serif';
       for (let i = 0; i < p.length; i++) {

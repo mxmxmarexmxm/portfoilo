@@ -4,7 +4,7 @@ import { SettingsContext } from '../context/SettingsContext';
 
 const defaultValues = {
   fps: 23,
-  color: '#292727',
+  animationTextColor: '#292727',
   charset: 'M',
   size: 12,
   animation: true,
@@ -98,13 +98,13 @@ const Settings = (props) => {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="color">Color</label>
+          <label htmlFor="animationTextColor">Animation Text Color</label>
           <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
             <input
               className="text-black cursor-pointer w-[200%] h-[200%] aspect-square"
               type="color"
-              name="color"
-              value={formState.color}
+              name="animationTextColor"
+              value={formState.animationTextColor}
               disabled={!formState.animation}
               onChange={handleInputChange}
             />
