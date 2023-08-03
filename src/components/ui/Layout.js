@@ -11,7 +11,7 @@ const Layout = (props) => {
       style={{ color: settings.primaryTextColor }}
     >
       <div
-        className={`absolute top-0 left-0 w-full h-full z-[-10} opacity-100
+        className={`absolute top-0 left-0 w-full h-full z-[-10] opacity-100
         } transition-opacity duration-300`}
       >
         <CanvasComponent />
