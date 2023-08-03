@@ -13,7 +13,7 @@ const Toggle = ({ label, defaultOn, onChange }) => {
         htmlFor={inputId}
         className="flex items-center justify-between cursor-pointer w-full"
       >
-        <span className="text-white flex-1">{label}</span>
+        <span className="flex-1">{label}</span>
         <div className="relative flex">
           <input
             id={inputId}
