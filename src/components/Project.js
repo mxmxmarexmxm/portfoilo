@@ -51,7 +51,7 @@ const Project = (props) => {
               className={`h-14 ${isGrid ? 'sm:h-14' : 'sm:h-28'} ${
                 !liveUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
-              color="white"
+              color={settings.iconsColor}
             />
           </a>
         </div>
@@ -62,7 +62,7 @@ const Project = (props) => {
               className={`h-10 ${isGrid ? 'sm:h-14' : 'sm:h-20'} ${
                 !githubUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
-              color="white"
+              color={settings.iconsColor}
             />
           </a>
         </div>

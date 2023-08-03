@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Settings from '../../assets/icons/settings';
+import { SettingsContext } from '../../context/SettingsContext';
 
 const Navbar = (props) => {
+  const { settings } = useContext(SettingsContext);
   const { openSettings } = props;
   return (
     <nav className="smooth-scroll">
@@ -16,7 +18,10 @@ const Navbar = (props) => {
           <a href="#contact">Contact</a>
         </li>
         <li className="cursor-pointer" onClick={openSettings}>
-          <Settings className="cursor-pointer w-6 sm:w-8" />
+          <Settings
+            className="cursor-pointer w-6 sm:w-8"
+            color={settings.iconsColor}
+          />
         </li>
       </ul>
     </nav>

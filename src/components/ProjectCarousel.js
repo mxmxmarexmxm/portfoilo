@@ -1,11 +1,13 @@
 import projectsData from '../data/projects-data';
 import Project from './Project';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Forward from '../assets/icons/forward';
 import Backward from '../assets/icons/backward';
+import { SettingsContext } from '../context/SettingsContext';
 
 const ProjectCarousel = () => {
   const [project, setProject] = useState(0);
+  const { settings } = useContext(SettingsContext);
   const projectLength = projectsData.length;
 
   const carouselHandler = (direction) => {
@@ -30,13 +32,19 @@ const ProjectCarousel = () => {
     <div className="flex flex-col items-center justify-center h-[90vh] relative w-full mt-16">
       <div className="flex items-start justify-between sm:px-4 min-h-[60%]">
         <button onClick={() => carouselHandler('backward')}>
-          <Backward className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] xl:top-1/3 left-2" />
+          <Backward
+            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] xl:top-1/3 left-2"
+            color={settings.iconsColor}
+          />
         </button>
 
         <Project {...projectsData[project]} />
 
         <button onClick={() => carouselHandler('forward')}>
-          <Forward className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] xl:top-1/3 right-2" />
+          <Forward
+            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] xl:top-1/3 right-2"
+            color={settings.iconsColor}
+          />
         </button>
       </div>
 
