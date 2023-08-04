@@ -56,6 +56,11 @@ const Settings = (props) => {
         onSubmit={handleSubmit}
         className="flex flex-col justify-between flex-1 gap-4 sm:text-xl font-bold"
       >
+        <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
+          <div className="flex-1 border-t border-gray-300"></div>
+          <h2 className="text-xl font-semibold">Animated Background</h2>
+          <div className="flex-1 border-t border-gray-300"></div>
+        </div>
         <Toggle
           label="Background animation"
           defaultOn={formState.animation}
@@ -111,6 +116,11 @@ const Settings = (props) => {
               onChange={handleInputChange}
             />
           </div>
+        </div>
+        <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
+          <div className="flex-1 border-t border-gray-300"></div>
+          <h2 className="text-xl font-semibold">General Layout</h2>
+          <div className="flex-1 border-t border-gray-300"></div>
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="backgroundColor">Background Color</label>
