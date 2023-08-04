@@ -59,7 +59,7 @@ const Settings = (props) => {
       >
         <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
           <div className="flex-1 border-t border-gray-300"></div>
-          <h2 className="text-base sm:text:xl font-semibold">
+          <h2 className="text-base sm:text-xl font-semibold">
             Animated Background
           </h2>
           <div className="flex-1 border-t border-gray-300"></div>
@@ -122,7 +122,7 @@ const Settings = (props) => {
         </div>
         <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
           <div className="flex-1 border-t border-gray-300"></div>
-          <h2 className="text-base sm:text:xl font-semibold">General Layout</h2>
+          <h2 className="text-base sm:text-xl font-semibold">General Layout</h2>
           <div className="flex-1 border-t border-gray-300"></div>
         </div>
         <div className="flex justify-between items-center">
