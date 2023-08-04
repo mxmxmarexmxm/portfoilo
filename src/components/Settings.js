@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import Toggle from './ui/Toggle';
 import { SettingsContext } from '../context/SettingsContext';
-import Backward2 from '../assets/icons/liveweb';
 
 const defaultValues = {
   fps: 23,
