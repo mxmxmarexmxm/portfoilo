@@ -49,7 +49,7 @@ const Settings = (props) => {
 
   return (
     <>
-      <h2 className="font-bold text-2xl sm:text-3xl mb-8 text-center">
+      <h2 className="font-bold text-2xl sm:text-3xl sm:mb-8 mb-2 text-center">
         Settings
       </h2>
       <form
@@ -58,7 +58,9 @@ const Settings = (props) => {
       >
         <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
           <div className="flex-1 border-t border-gray-300"></div>
-          <h2 className="text-xl font-semibold">Animated Background</h2>
+          <h2 className="text-base sm:text:xl font-semibold">
+            Animated Background
+          </h2>
           <div className="flex-1 border-t border-gray-300"></div>
         </div>
         <Toggle
@@ -119,7 +121,7 @@ const Settings = (props) => {
         </div>
         <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
           <div className="flex-1 border-t border-gray-300"></div>
-          <h2 className="text-xl font-semibold">General Layout</h2>
+          <h2 className="text-base sm:text:xl font-semibold">General Layout</h2>
           <div className="flex-1 border-t border-gray-300"></div>
         </div>
         <div className="flex justify-between items-center">
