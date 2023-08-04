@@ -48,9 +48,11 @@ const Settings = (props) => {
 
   return (
     <>
-      <h2 className="font-bold text-2xl sm:text-3xl sm:mb-8 mb-2 text-center">
-        Settings
-      </h2>
+      <div className="sticky top-0 bg-inherit mt-4 z-10 p-2 left-0">
+        <h2 className="font-bold text-2xl sm:text-3xl sm:mb-8 mb-2 text-center ">
+          Settings
+        </h2>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col justify-between flex-1 gap-4 sm:text-xl font-bold"
