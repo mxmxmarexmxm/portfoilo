@@ -1,9 +1,11 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import githubLogo from '../assets/img/logo/github.png';
-import linkedinLogo from '../assets/img/logo/linkedin.png';
+import LinkedinIcon from '../assets/icons/linkedin';
+import { SettingsContext } from '../context/SettingsContext';
+import GithubIcon from '../assets/icons/github';
 
 const EmailContactForm = () => {
+  const { settings } = useContext(SettingsContext);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -68,11 +70,7 @@ const EmailContactForm = () => {
             href="https://github.com/mxmxmarexmxm"
             className="w-auto h-12"
           >
-            <img
-              src={githubLogo}
-              className="h-full invert"
-              alt="linkedin-logo"
-            />
+            <GithubIcon className="h-full" color={settings.iconsColor}/>
           </a>
         </div>
         <div className="flex">
@@ -82,11 +80,7 @@ const EmailContactForm = () => {
             href="https://www.linkedin.com/in/marinko-malencic/"
             className="w-auto h-12"
           >
-            <img
-              src={linkedinLogo}
-              className="h-full invert"
-              alt="linkedin-logo"
-            />
+            <LinkedinIcon className="h-full" color={settings.iconsColor} />
           </a>
         </div>
       </div>
