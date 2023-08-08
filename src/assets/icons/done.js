@@ -5,7 +5,6 @@ const DoneIcon = ({ className, color }) => {
       viewBox="0 0 20 20"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      // xmlns:xlink="http://www.w3.org/1999/xlink"
       className={className}
     >
       <title>
@@ -25,7 +24,7 @@ const DoneIcon = ({ className, color }) => {
           transform="translate(-1265.000000, -526.000000)"
           id="Group"
           stroke={color}
-          stroke-width="2"
+          strokeWidth="2"
         >
           <g transform="translate(1263.000000, 524.000000)" id="Shape">
             <path d="M12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 Z"></path>
