@@ -32,7 +32,8 @@ const EmailContactForm = () => {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="bg-gray-700 flex w-full mx-4 flex-col p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600"
+      style={{backgroundColor: settings.containersColor}}
+      className={`flex w-full mx-4 flex-col p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 mb-8 rounded-xl border-2 border-gray-600`}
     >
       <label className="font-bold text-xl">Name</label>
       <input
@@ -70,7 +71,7 @@ const EmailContactForm = () => {
             href="https://github.com/mxmxmarexmxm"
             className="w-auto h-12"
           >
-            <GithubIcon className="h-full" color={settings.iconsColor}/>
+            <GithubIcon className="h-full" color={settings.iconsColor} />
           </a>
         </div>
         <div className="flex">
