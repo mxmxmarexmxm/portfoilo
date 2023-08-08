@@ -13,6 +13,7 @@ const defaultValues = {
   secondaryTextColor: '#6b7280',
   backgroundColor: '#0000000D',
   iconsColor: '#ffffff',
+  containersColor: '#374151'
 };
 
 const Settings = (props) => {
@@ -48,7 +49,7 @@ const Settings = (props) => {
 
   return (
     <>
-      <div className="sticky top-0 bg-inherit mt-4 z-10 p-2 left-0">
+      <div className="sticky top-0 bg-inherit z-10 p-2 left-0">
         <h2 className="font-bold text-2xl sm:text-3xl mb-2 text-center ">
           Settings
         </h2>
@@ -170,6 +171,18 @@ const Settings = (props) => {
               type="color"
               name="iconsColor"
               value={formState.iconsColor}
+              onChange={handleInputChange}
+            />
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <label htmlFor="containersColor">Containers Color</label>
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+            <input
+              className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
+              type="color"
+              name="containersColor"
+              value={formState.containersColor}
               onChange={handleInputChange}
             />
           </div>
