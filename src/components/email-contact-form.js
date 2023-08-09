@@ -70,7 +70,7 @@ const EmailContactForm = () => {
         <div className="fixed top-0 left-0 flex justify-center bg-[rgba(0,0,0,0.9)] w-full h-full items-center ">
           <div
             style={{ backgroundColor: settings.containersColor }}
-            className="rounded-xl w-[90vw] md:w-[650px] p-8 flex items-center gap-10 text-xl flex-col border-2 border-gray-500"
+            className="rounded-xl w-[90vw] md:w-[650px] p-8 flex items-center gap-10 text-base flex-col md:text-xl border-2 border-gray-500"
           >
             {messageAlertContent}
             <button
