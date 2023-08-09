@@ -7,7 +7,7 @@ const Layout = (props) => {
 
   return (
     <div
-      className="w-full min-h-full sm:p-4 p-1 flex justify-center"
+      className="w-full overflow-hidden min-h-full sm:p-4 p-1 flex justify-center"
       style={{
         color: settings.primaryTextColor,
         backgroundColor: !settings.animation ? settings.backgroundColor : '',
