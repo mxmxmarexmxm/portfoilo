@@ -17,7 +17,7 @@ const EmailContactForm = () => {
     emailjs
       .sendForm(
         'service_qtpzty8',
-        'template_nxjgkab',
+        'template_ck852af',
         form.current,
         '-DHMW1pR3UQzT__z-'
       )
@@ -37,8 +37,8 @@ const EmailContactForm = () => {
       <DoneIcon className="md:w-32 md:h-32 w-24 h-24 mx-auto" color="#1fec04" />
       <p className="text-center">
         Thank you for reaching out! <br />
-        Your message has been successfully sent. I'll get back to you as soon as
-        possible.
+        Your message has been successfully sent.
+        <br /> I'll get back to you as soon as possible.
         <br /> Have a great day!
       </p>
     </>
