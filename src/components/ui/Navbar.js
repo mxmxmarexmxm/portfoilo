@@ -6,8 +6,8 @@ const Navbar = (props) => {
   const { settings } = useContext(SettingsContext);
   const { openSettings } = props;
   return (
-    <nav className="smooth-scroll">
-      <ul className="flex fixed top-0 right-0 gap-8 bg-black w-full justify-end px-8 py-2 sm:py-4 font-semibold sm:text-xl z-50">
+    <nav className="smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full justify-end items-center px-8 py-2 sm:py-4 font-semibold z-50">
+      <ul className="flex gap-8 w-full justify-end items-center text-sm font-semibold ">
         <li className="cursor-pointer">
           <a href="#about-me">About Me</a>
         </li>
