@@ -28,8 +28,7 @@ const Settings = (props) => {
   };
 
   const resetToDefaultValues = () => {
-    setSettings(defaultValues); // Reset the formState to the default settings
-    setIsOpen(false); // Close the modal
+    setFormState(defaultValues);
   };
 
   const setRandomColors = () => {
