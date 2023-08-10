@@ -13,7 +13,7 @@ const defaultValues = {
   secondaryTextColor: '#6b7280',
   backgroundColor: '#0000000D',
   iconsColor: '#ffffff',
-  containersColor: '#374151'
+  containersColor: '#374151',
 };
 
 const Settings = (props) => {
@@ -30,6 +30,23 @@ const Settings = (props) => {
   const resetToDefaultValues = () => {
     setSettings(defaultValues); // Reset the formState to the default settings
     setIsOpen(false); // Close the modal
+  };
+
+  const setRandomColors = () => {
+    const generateRandomColor = () =>
+      '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+    setFormState((c) => {
+      return {
+        ...c,
+        animationTextColor: generateRandomColor(),
+        primaryTextColor: generateRandomColor(),
+        secondaryTextColor: generateRandomColor(),
+        backgroundColor: generateRandomColor(),
+        iconsColor: generateRandomColor(),
+        containersColor: generateRandomColor(),
+      };
+    });
   };
 
   const handleInputChange = (event) => {
@@ -197,14 +214,23 @@ const Settings = (props) => {
             }))
           }
         />
-        <button
-          type="button"
-          className="w-32 rounded-xl self-center"
-          onClick={() => resetToDefaultValues()}
-        >
-          Default
-        </button>
-        <div className="flex gap-4 justify-center h-12 mt-6">
+        <div className="self-center mt-2">
+          <button
+            type="button"
+            className="w-48 rounded-xl "
+            onClick={() => resetToDefaultValues()}
+          >
+            Default
+          </button>
+          <button
+            type="button"
+            className="w-48  rounded-xl"
+            onClick={() => setRandomColors()}
+          >
+            Random Colors
+          </button>
+        </div>
+        <div className="flex gap-4 justify-center h-12 mt-4">
           <button
             type="button"
             className="w-32 bg-gray-900 rounded-xl"
