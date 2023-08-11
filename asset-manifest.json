@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfoilo/static/css/main.8345d2dd.css",
-    "main.js": "/portfoilo/static/js/main.9123f9aa.js",
+    "main.css": "/portfoilo/static/css/main.fe6bc9cf.css",
+    "main.js": "/portfoilo/static/js/main.4a6ea778.js",
     "static/media/chatflix.png": "/portfoilo/static/media/chatflix.fa3812745fbcbe7e2958.png",
     "static/media/maske.png": "/portfoilo/static/media/maske.f7837809f19388a323c5.png",
     "static/media/it-quiz.png": "/portfoilo/static/media/it-quiz.f3a09f87e0dce14dc29b.png",
     "static/media/wartung.png": "/portfoilo/static/media/wartung.50be1e8f6965c5958961.png",
     "static/media/antireels.png": "/portfoilo/static/media/antireels.13042f62496b83f3b323.png",
+    "static/media/nav-avatar.png": "/portfoilo/static/media/nav-avatar.3fc3f65241648118a1d9.png",
     "index.html": "/portfoilo/index.html",
-    "main.8345d2dd.css.map": "/portfoilo/static/css/main.8345d2dd.css.map",
-    "main.9123f9aa.js.map": "/portfoilo/static/js/main.9123f9aa.js.map"
+    "main.fe6bc9cf.css.map": "/portfoilo/static/css/main.fe6bc9cf.css.map",
+    "main.4a6ea778.js.map": "/portfoilo/static/js/main.4a6ea778.js.map"
   },
   "entrypoints": [
-    "static/css/main.8345d2dd.css",
-    "static/js/main.9123f9aa.js"
+    "static/css/main.fe6bc9cf.css",
+    "static/js/main.4a6ea778.js"
   ]
 }
