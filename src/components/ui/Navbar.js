@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import Settings from '../../assets/icons/settings';
 import { SettingsContext } from '../../context/SettingsContext';
+import avatar from '../../assets/img/nav-avatar.png';
 
 const Navbar = (props) => {
   const { settings } = useContext(SettingsContext);
   const { openSettings } = props;
   return (
-    <nav className="smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full justify-end items-center px-8 py-2 sm:py-4 font-semibold z-50">
+    <nav className="smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full  items-center px-8 py-2 sm:py-4 font-semibold z-50">
+      <div className="h-full w-8 self-start">
+        <img src={avatar} className="h-full w-8 self-start" />
+      </div>
       <ul className="flex sm:text-xl gap-8 w-full justify-end items-center text-sm font-semibold ">
         <li className="cursor-pointer">
           <a href="#about-me">About Me</a>
