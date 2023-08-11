@@ -11,7 +11,7 @@ const Navbar = (props) => {
       <div className="h-full w-8 self-start">
         <img src={avatar} className="h-full w-8 self-start" />
       </div>
-      <ul className="flex sm:text-xl gap-8 w-full justify-end items-center text-sm font-semibold ">
+      <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full justify-end items-center text-sm font-semibold ">
         <li className="cursor-pointer">
           <a href="#about-me">About Me</a>
         </li>
