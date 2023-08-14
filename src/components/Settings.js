@@ -63,6 +63,10 @@ const Settings = (props) => {
     }));
   };
 
+  const saveSettingsToLocalStorage = () => {
+    localStorage.setItem('settings', JSON.stringify(formState));
+  };
+
   return (
     <>
       <div className="sticky top-0 bg-inherit z-10 p-2 left-0">
@@ -216,17 +220,24 @@ const Settings = (props) => {
         <div className="self-center mt-2">
           <button
             type="button"
-            className="w-48 rounded-xl"
+            className="w-32 rounded-xl"
+            onClick={() => saveSettingsToLocalStorage()}
+          >
+            Save
+          </button>
+          <button
+            type="button"
+            className="w-32 rounded-xl"
             onClick={() => resetToDefaultValues()}
           >
             Default
           </button>
           <button
             type="button"
-            className="w-48  rounded-xl"
+            className="w-32  rounded-xl"
             onClick={() => setRandomColors()}
           >
-            Random Colors
+            Random
           </button>
         </div>
         <div className="flex gap-4 justify-center h-12 mt-4">
