@@ -228,7 +228,7 @@ const Settings = (props) => {
               Save
             </button>
             <div className="group">
-              <InfoIcon className="w-6 h-6" color="#ffffff" />
+              <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
                 Save settings for the next time you visit my portfolio.
               </div>
@@ -243,7 +243,7 @@ const Settings = (props) => {
               Default
             </button>
             <div className=" group">
-              <InfoIcon className="w-6 h-6" color="#ffffff" />
+              <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
 
               <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
                 Reset settings to their default values.
@@ -259,7 +259,7 @@ const Settings = (props) => {
               Random
             </button>
             <div className="group">
-              <InfoIcon className="w-6 h-6" color="#ffffff" />
+              <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
                 Generate random colors.
               </div>
