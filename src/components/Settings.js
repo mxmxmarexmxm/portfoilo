@@ -229,7 +229,10 @@ const Settings = (props) => {
             </button>
             <div className="group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
-              <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
+              <div
+                style={{ color: settings.primaryTextColor }}
+                className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100"
+              >
                 Save settings for the next time you visit my portfolio.
               </div>
             </div>
@@ -245,7 +248,10 @@ const Settings = (props) => {
             <div className=" group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
 
-              <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
+              <div
+                style={{ color: settings.primaryTextColor }}
+                className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100"
+              >
                 Reset settings to their default values.
               </div>
             </div>
@@ -260,7 +266,10 @@ const Settings = (props) => {
             </button>
             <div className="group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
-              <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
+              <div
+                style={{ color: settings.primaryTextColor }}
+                className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100"
+              >
                 Generate random colors.
               </div>
             </div>
