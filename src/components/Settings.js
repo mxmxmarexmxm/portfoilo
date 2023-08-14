@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import Toggle from './ui/Toggle';
 import { SettingsContext } from '../context/SettingsContext';
+import InfoIcon from '../assets/icons/info';
 
 const defaultValues = {
   fps: 23,
@@ -217,28 +218,53 @@ const Settings = (props) => {
             }))
           }
         />
-        <div className="self-center mt-2">
-          <button
-            type="button"
-            className="w-32 rounded-xl"
-            onClick={() => saveSettingsToLocalStorage()}
-          >
-            Save
-          </button>
-          <button
-            type="button"
-            className="w-32 rounded-xl"
-            onClick={() => resetToDefaultValues()}
-          >
-            Default
-          </button>
-          <button
-            type="button"
-            className="w-32  rounded-xl"
-            onClick={() => setRandomColors()}
-          >
-            Random
-          </button>
+        <div className="self-center mt-2 flex justify-between  flex-1 w-full">
+          <div className="flex flex-1 justify-center gap-1 items-center relative">
+            <button
+              type="button"
+              className="rounded-xl flex"
+              onClick={() => saveSettingsToLocalStorage()}
+            >
+              Save
+            </button>
+            <div className="group">
+              <InfoIcon className="w-6 h-6" color="#ffffff" />
+              <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
+                Save settings for the next time you visit my portfolio.
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-1 justify-center relative  items-center gap-1">
+            <button
+              type="button"
+              className=" rounded-xl"
+              onClick={() => resetToDefaultValues()}
+            >
+              Default
+            </button>
+            <div className=" group">
+              <InfoIcon className="w-6 h-6" color="#ffffff" />
+
+              <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
+                Reset settings to their default values.
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-1 relative justify-center items-center gap-1">
+            <button
+              type="button"
+              className="  rounded-xl"
+              onClick={() => setRandomColors()}
+            >
+              Random
+            </button>
+            <div className="group">
+              <InfoIcon className="w-6 h-6" color="#ffffff" />
+              <div className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 text-black p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100">
+                Generate random colors.
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex gap-4 justify-center h-12 mt-4">
           <button
