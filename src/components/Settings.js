@@ -66,7 +66,7 @@ const Settings = (props) => {
   return (
     <>
       <div className="sticky top-0 bg-inherit z-10 p-2 left-0">
-        <h2 className="font-bold text-2xl sm:text-3xl mb-2 text-center ">
+        <h2 className="font-bold text-2xl sm:text-3xl mb-2 text-center">
           Settings
         </h2>
       </div>
@@ -126,7 +126,7 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="animationTextColor">Animation Text Color</label>
-          <div className="rounded-full border-2 border-white flex items-center overflow-hidden justify-center w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center overflow-hidden justify-center w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
@@ -144,7 +144,7 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="backgroundColor">Background Color</label>
-          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
@@ -157,7 +157,7 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="primaryTextColor">Primary Text Color</label>
-          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
@@ -169,7 +169,7 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="secondaryTextColor">Secondary Text Color</label>
-          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
@@ -181,7 +181,7 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="iconsColor">Icons Color</label>
-          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
@@ -193,7 +193,7 @@ const Settings = (props) => {
         </div>
         <div className="flex justify-between items-center">
           <label htmlFor="containersColor">Containers Color</label>
-          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10 ">
+          <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
@@ -216,7 +216,7 @@ const Settings = (props) => {
         <div className="self-center mt-2">
           <button
             type="button"
-            className="w-48 rounded-xl "
+            className="w-48 rounded-xl"
             onClick={() => resetToDefaultValues()}
           >
             Default
