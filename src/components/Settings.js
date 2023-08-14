@@ -227,11 +227,11 @@ const Settings = (props) => {
             >
               Save
             </button>
-            <div className="group">
+            <div className="relative group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100"
+                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-600 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
                 Save settings for the next time you visit my portfolio.
               </div>
@@ -245,12 +245,12 @@ const Settings = (props) => {
             >
               Default
             </button>
-            <div className=" group">
+            <div className="relative group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
 
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100"
+                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-600 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
                 Reset settings to their default values.
               </div>
@@ -264,13 +264,13 @@ const Settings = (props) => {
             >
               Random
             </button>
-            <div className="group">
+            <div className="relative group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute bottom-[100%] transform left-[0%] rounded-md w-full  translate-x-1/5  bg-gray-300 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 group-hover:opacity-100"
+                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-600 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
-                Generate random colors.
+                Generate random colors for my portfolio.
               </div>
             </div>
           </div>
