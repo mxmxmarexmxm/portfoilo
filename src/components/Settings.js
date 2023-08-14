@@ -268,7 +268,7 @@ const Settings = (props) => {
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-600 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
+                className="absolute -left-8 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-600 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
                 Generate random colors for my portfolio.
               </div>
