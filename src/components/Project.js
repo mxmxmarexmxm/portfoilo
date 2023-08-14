@@ -20,30 +20,32 @@ const Project = (props) => {
   const isGrid = settings.projectsLayout === 'grid';
 
   return (
-    <div className="flex flex-col min-h-[90%]">
-      <div className="text-center font-bold">
-        <span
-          className="bg-black p-2"
-          style={{ color: settings.secondaryTextColor }}
-        >
-          {title}
-        </span>
-        <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
-      </div>
-      <div className="flex justify-center my-4 w-full items-center overflow-hidden">
-        <div
-          className={`w-9/12  mr-4 sm:mr-6  ${
-            !noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''
-          }`}
-        >
-          <img src={projectImg} className="w-full" alt={`pc-${name}`} />
+    <div className="flex flex-col h-[90%]">
+      <div className="h-[80%] sm:h-full flex flex-col items-center justify-center">
+        <div className="text-center font-bold">
+          <span
+            className="bg-black p-2"
+            style={{ color: settings.secondaryTextColor }}
+          >
+            {title}
+          </span>
+          <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
         </div>
+        <div className="flex justify-center my-4 w-full items-center overflow-hidden">
+          <div
+            className={`w-9/12  mr-4 sm:mr-6  ${
+              !noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''
+            }`}
+          >
+            <img src={projectImg} className="w-full" alt={`pc-${name}`} />
+          </div>
+        </div>
+        <LogoBadgeContainer techs={techs} />
       </div>
-      <LogoBadgeContainer techs={techs} />
       <div
         className={`text-center ${
           isGrid ? 'md:w-[100%]' : 'md:w-[70vw]'
-        } mx-auto flex justify-between items-center my-8 px-2`}
+        } mx-auto flex justify-between items-center my-8 px-2 h-[20%]`}
       >
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
