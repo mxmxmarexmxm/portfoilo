@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 
 export const SettingsContext = createContext();
 
@@ -16,6 +16,11 @@ const SettingsProvider = ({ children }) => {
     iconsColor: '#ffffff',
     containersColor: '#374151',
   });
+
+  useEffect(() => {
+    const localStorageSettings = localStorage.getItem('settings');
+    localStorageSettings && setSettings(JSON.parse(localStorageSettings));
+  }, []);
 
   return (
     <SettingsContext.Provider value={{ settings, setSettings }}>
