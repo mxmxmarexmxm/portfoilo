@@ -55,7 +55,7 @@ const Project = (props) => {
         <div>
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <LiveWebIcon
-              className={`h-14 ${isGrid ? 'sm:h-14' : 'sm:h-28'} ${
+              className={`h-14 ${isGrid ? 'sm:h-16' : 'sm:h-28'} ${
                 !liveUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               color={settings.iconsColor}
@@ -66,7 +66,7 @@ const Project = (props) => {
         <div>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             <GithubIcon
-              className={`h-10 ${isGrid ? 'sm:h-14' : 'sm:h-20'} ${
+              className={`h-10 ${isGrid ? 'sm:h-12' : 'sm:h-20'} ${
                 !githubUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               color={settings.iconsColor}
