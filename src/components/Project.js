@@ -45,7 +45,7 @@ const Project = (props) => {
             />
           </div>
         </div>
-        <LogoBadgeContainer techs={techs} />
+        <LogoBadgeContainer techs={techs} animation={animation} />
       </div>
       <div
         className={`text-center ${
