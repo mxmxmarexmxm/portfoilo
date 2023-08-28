@@ -15,6 +15,7 @@ const Project = (props) => {
     techs,
     githubUrl,
     noPhoneImg,
+    animation,
   } = props;
 
   const isGrid = settings.projectsLayout === 'grid';
@@ -37,7 +38,11 @@ const Project = (props) => {
               !noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''
             }`}
           >
-            <img src={projectImg} className="w-full" alt={`pc-${name}`} />
+            <img
+              src={projectImg}
+              className={`w-full ${animation}`}
+              alt={`${name}-project-preview`}
+            />
           </div>
         </div>
         <LogoBadgeContainer techs={techs} />

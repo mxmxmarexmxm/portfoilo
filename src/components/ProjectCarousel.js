@@ -7,6 +7,7 @@ import { SettingsContext } from '../context/SettingsContext';
 
 const ProjectCarousel = () => {
   const [project, setProject] = useState(0);
+  const [animation, setAnimation] = useState('');
   const { settings } = useContext(SettingsContext);
   const projectLength = projectsData.length;
 
@@ -18,6 +19,7 @@ const ProjectCarousel = () => {
         }
         return current + 1;
       });
+      setAnimation('slide-next-project');
     } else {
       setProject((current) => {
         if (project === 0) {
@@ -25,6 +27,7 @@ const ProjectCarousel = () => {
         }
         return current - 1;
       });
+      setAnimation('slide-previous-project');
     }
   };
 
@@ -37,9 +40,7 @@ const ProjectCarousel = () => {
             color={settings.iconsColor}
           />
         </button>
-        {/* <div className="flex justify-between sm:px-4 h-[90%] sm:h-full relative w-full slide-project-x-1"> */}
-          <Project {...projectsData[project]} />
-        {/* </div> */}
+        <Project {...projectsData[project]} key={project} animation={animation} />
         <button onClick={() => carouselHandler('forward')}>
           <Forward
             className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[30%] right-2"
