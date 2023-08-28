@@ -70,7 +70,7 @@ const Settings = (props) => {
 
   return (
     <>
-      <div className="sticky top-0 bg-inherit z-10 p-2 left-0">
+      <div className="sticky top-0 bg-gray-800 z-10 p-2 left-0 py-5">
         <h2 className="font-bold text-2xl sm:text-3xl mb-2 text-center">
           Settings
         </h2>
