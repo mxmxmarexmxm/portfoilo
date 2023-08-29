@@ -55,3 +55,85 @@ code {
     opacity: 1;
   }
 }
+
+.bounce-in-m-1 {
+  animation: bounce-in-m-1 2s ease-in-out forwards;
+}
+
+@keyframes bounce-in-m-1 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-in-m-2 {
+  animation: bounce-in-m-2 2s ease-in-out forwards;
+}
+
+@keyframes bounce-in-m-2 {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.font-elite {
+  /* font-family: 'Rubik Iso', cursive; */
+  /* font-family: 'Cinzel', serif; */
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: 'Special Elite', cursive;
+}
+
+.typewriter span {
+  overflow: hidden;
+  display: block;
+  border-right: 0.15em solid rgb(124, 123, 121);
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 0.15em;
+  width: 0;
+  animation: typing 3s steps(40, end) 2s both,
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(124, 123, 121);
+  }
+}
