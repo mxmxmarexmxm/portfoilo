@@ -13,7 +13,7 @@ const Navbar = (props) => {
       </div>
       <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full justify-end items-center text-sm font-semibold ">
         <li className="cursor-pointer whitespace-nowrap">
-          <a href="#about-me">About Me</a>
+          <a href="#home">Home</a>
         </li>
         <li className="cursor-pointer whitespace-nowrap">
           <a href="#work">Projects</a>
