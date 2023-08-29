@@ -4,10 +4,11 @@ import { SettingsContext } from '../context/SettingsContext';
 const AboutMe = () => {
   const [txt, setTxt] = useState('');
   const { settings } = useContext(SettingsContext);
-  let charIndex = -1;
+  let charIndex = 0;
 
   useEffect(() => {
-    const typewriterText = `I'm a frontend web developer.`;
+    // TODO: Chrome: charAt(1) isn't displayed, Firefox: charAt(0) isn't displayed, add double space to avoid bug
+    const typewriterText = `  I'm a frontend web developer.`;
     const startTyping = setTimeout(() => {
       const interval = setInterval(() => {
         if (charIndex < typewriterText.length) {
