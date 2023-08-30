@@ -32,19 +32,25 @@ const Home = () => {
   return (
     <div className="flex items-center justify-start h-screen text-center w-full font-elite">
       <div className="w-full flex flex-col gap-8">
-        <div className="sm:text-[25rem] text-[10rem] font-semibold flex sm:leading-[18rem] justify-center">
+        <div className="md:text-[25rem] sm:text-[18rem]  text-[10rem] font-semibold flex md:leading-[18rem] sm:leading-[12rem] justify-center">
           <div className="bounce-in-m-1">
             <span className="whitespace-nowrap">
-              M<span className="sm:text-8xl text-5xl rotate-x">x</span>
+              M
+              <span className="md:text-8xl sm:text-7xl text-5xl rotate-x">
+                x
+              </span>
             </span>
           </div>
           <div className="bounce-in-m-2">
             <span className="whitespace-nowrap">
-              M<span className="sm:text-8xl text-5xl rotate-x">x</span>
+              M
+              <span className="md:text-8xl sm:text-7xl text-5xl rotate-x">
+                x
+              </span>
             </span>
           </div>
         </div>
-        <div className="flex justify-center items-center w-full sm:text-7xl text-3xl font-semibold text-center flex-col">
+        <div className="flex justify-center items-center w-full md:text-7xl sm:text-6xl text-3xl font-semibold text-center flex-col">
           <h1 className="whitespace-nowrap">
             Hi, I'm{' '}
             <span style={{ color: settings.secondaryTextColor }}>Marinko.</span>
@@ -52,7 +58,7 @@ const Home = () => {
           </h1>
         </div>
         <div className="typewriter">
-          <h2 className="text-3xl sm:text-7xl">{subtitle}</h2>
+          <h2 className="text-3xl md:text-7xl sm:text-6xl">{subtitle}</h2>
         </div>
       </div>
     </div>
