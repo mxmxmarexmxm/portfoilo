@@ -34,9 +34,9 @@ const Project = (props) => {
         </div>
         <div className="flex justify-center my-4 w-full items-center overflow-hidden">
           <div
-            className={`w-9/12  mr-4 sm:mr-6 md:min-h-[300px] lg:min-h-[500px] min-h-[150px]   ${
-              !noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''
-            }`}
+            className={`w-9/12  mr-4 sm:mr-6  ${
+              !isGrid ? 'md:min-h-[300px] lg:min-h-[500px] min-h-[150px]' : ''
+            }   ${!noPhoneImg ? 'sm:ml-10 xl:ml-36' : ''}`}
           >
             <img
               src={projectImg}
