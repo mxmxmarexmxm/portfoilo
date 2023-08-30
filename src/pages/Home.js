@@ -35,12 +35,12 @@ const Home = () => {
         <div className="sm:text-[25rem] text-[10rem] font-semibold flex sm:leading-[18rem] justify-center">
           <div className="bounce-in-m-1">
             <span className="whitespace-nowrap">
-              M<span className="sm:text-8xl text-5xl">x</span>
+              M<span className="sm:text-8xl text-5xl rotate-x">x</span>
             </span>
           </div>
           <div className="bounce-in-m-2">
             <span className="whitespace-nowrap">
-              M<span className="sm:text-8xl text-5xl">x</span>
+              M<span className="sm:text-8xl text-5xl rotate-x">x</span>
             </span>
           </div>
         </div>

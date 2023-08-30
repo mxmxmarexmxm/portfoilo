@@ -125,3 +125,24 @@ code {
     border-color: rgb(124, 123, 121);
   }
 }
+
+.rotate-x {
+  display: inline-block;
+  cursor: pointer;
+  animation: rotate-x 0.9s ease-in-out forwards;
+}
+
+.rotate-x:hover {
+  animation: rotate-x 0.9s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+@keyframes rotate-x {
+  0% {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
