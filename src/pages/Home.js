@@ -57,7 +57,7 @@ const Home = () => {
             <br />
           </h1>
           <div className="typewriter">
-            <h2>I'm a frontend web developer.</h2>
+            <h2>{subtitle}</h2>
           </div>
         </div>
       </div>
