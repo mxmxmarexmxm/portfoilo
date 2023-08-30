@@ -52,7 +52,7 @@ const Project = (props) => {
           isGrid ? 'md:w-[100%]' : 'md:w-[70vw]'
         } mx-auto flex justify-between items-center my-8 px-2 h-[20%]`}
       >
-        <div>
+        <div className="flex justify-center items-center">
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <LiveWebIcon
               className={`h-14 ${isGrid ? 'sm:h-16' : 'sm:h-28'} ${
@@ -62,7 +62,7 @@ const Project = (props) => {
             />
           </a>
         </div>
-        <p className="sm:max-w-[50%] max-w-[65%]">{description}</p>
+        <p className="sm:max-w-[50%] max-w-[65%] -ml-5">{description}</p>
         <div>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             <GithubIcon
