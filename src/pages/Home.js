@@ -34,12 +34,12 @@ const Home = () => {
       <div className="w-full flex flex-col gap-8">
         <div className="sm:text-[25rem] text-[10rem] font-semibold flex sm:leading-[18rem] justify-center">
           <div className="bounce-in-m-1">
-            <span>
+            <span className="whitespace-nowrap">
               M<span className="sm:text-8xl text-5xl">x</span>
             </span>
           </div>
           <div className="bounce-in-m-2">
-            <span>
+            <span className="whitespace-nowrap">
               M<span className="sm:text-8xl text-5xl">x</span>
             </span>
           </div>
