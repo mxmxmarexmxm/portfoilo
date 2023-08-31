@@ -129,7 +129,7 @@ code {
 .rotate-x {
   display: inline-block;
   cursor: pointer;
-  animation: rotate-x 0.9s ease-in-out forwards;
+  animation: rotate-x 0.3s ease-in-out forwards 1.9s;
 }
 
 .rotate-x:hover {
