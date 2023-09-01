@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfoilo/static/css/main.9ce1a323.css",
-    "main.js": "/portfoilo/static/js/main.36ecc233.js",
-    "static/media/chatflix.png": "/portfoilo/static/media/chatflix.fa3812745fbcbe7e2958.png",
-    "static/media/maske.png": "/portfoilo/static/media/maske.f7837809f19388a323c5.png",
-    "static/media/it-quiz.png": "/portfoilo/static/media/it-quiz.f3a09f87e0dce14dc29b.png",
-    "static/media/wartung.png": "/portfoilo/static/media/wartung.50be1e8f6965c5958961.png",
-    "static/media/antireels.png": "/portfoilo/static/media/antireels.13042f62496b83f3b323.png",
-    "static/media/nav-avatar.png": "/portfoilo/static/media/nav-avatar.3fc3f65241648118a1d9.png",
-    "index.html": "/portfoilo/index.html",
-    "main.9ce1a323.css.map": "/portfoilo/static/css/main.9ce1a323.css.map",
-    "main.36ecc233.js.map": "/portfoilo/static/js/main.36ecc233.js.map"
+    "main.css": "/portfolio/static/css/main.4de42249.css",
+    "main.js": "/portfolio/static/js/main.17be83f4.js",
+    "static/media/chatflix.png": "/portfolio/static/media/chatflix.5915fab98be6f8b43ec3.png",
+    "static/media/maske.png": "/portfolio/static/media/maske.f7837809f19388a323c5.png",
+    "static/media/it-quiz.png": "/portfolio/static/media/it-quiz.f3a09f87e0dce14dc29b.png",
+    "static/media/wartung.png": "/portfolio/static/media/wartung.50be1e8f6965c5958961.png",
+    "static/media/antireels.png": "/portfolio/static/media/antireels.13042f62496b83f3b323.png",
+    "static/media/nav-avatar.png": "/portfolio/static/media/nav-avatar.3fc3f65241648118a1d9.png",
+    "index.html": "/portfolio/index.html",
+    "main.4de42249.css.map": "/portfolio/static/css/main.4de42249.css.map",
+    "main.17be83f4.js.map": "/portfolio/static/js/main.17be83f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ce1a323.css",
-    "static/js/main.36ecc233.js"
+    "static/css/main.4de42249.css",
+    "static/js/main.17be83f4.js"
   ]
 }
