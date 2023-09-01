@@ -16,6 +16,9 @@ const Navbar = (props) => {
           <a href="#home">Home</a>
         </li>
         <li className="cursor-pointer whitespace-nowrap">
+          <a href="#about-me">About Me</a>
+        </li>
+        <li className="cursor-pointer whitespace-nowrap">
           <a href="#work">Projects</a>
         </li>
         <li className="cursor-pointer whitespace-nowrap">
