@@ -7,6 +7,7 @@ import SettingsProvider from './context/SettingsContext';
 import Home from './pages/home';
 import Work from './pages/work';
 import Contact from './pages/contact';
+import AboutMe from './pages/about-me';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -26,6 +27,9 @@ function App() {
           </div>
           <div id="work">
             <Work />
+          </div>
+          <div id="about-me">
+            <AboutMe />
           </div>
           <div id="contact">
             <Contact />
