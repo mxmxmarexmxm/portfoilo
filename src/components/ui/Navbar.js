@@ -9,7 +9,11 @@ const Navbar = (props) => {
   return (
     <nav className="smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full  items-center px-8 py-2 sm:py-4 font-semibold z-50">
       <div className="h-8 w-8 self-start">
-        <img src={avatar} className="h-full w-full object-contain " />
+        <img
+          src={avatar}
+          className="h-full w-full object-contain"
+          alt="avatar"
+        />
       </div>
       <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full justify-end items-center text-sm font-semibold ">
         <li className="cursor-pointer whitespace-nowrap">
