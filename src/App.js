@@ -53,16 +53,16 @@ function App() {
       <Layout>
         <Navbar openSettings={() => setOpenModal(true)} />
         <div className="w-full h-full flex flex-col z-10">
-          <section id="home" className="pt-[4rem]">
+          <section id="home">
             <Home />
           </section>
-          <section id="about-me" className="pt-[4rem]">
+          <section id="about-me">
             <AboutMe />
           </section>
-          <section id="work" className="pt-[4rem]">
+          <section id="work" className="pt-[2rem]">
             <Work />
           </section>
-          <section id="contact" className="pt-[4rem]">
+          <section id="contact">
             <Contact />
           </section>
         </div>

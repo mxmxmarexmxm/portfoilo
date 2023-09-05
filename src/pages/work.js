@@ -13,7 +13,7 @@ const Work = () => {
       <ProjectGrid />
     );
 
-  return <div className="min-h-screen">{content}</div>;
+  return <div>{content}</div>;
 };
 
 export default Work;

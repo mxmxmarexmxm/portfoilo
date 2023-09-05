@@ -22,7 +22,7 @@ const Project = (props) => {
 
   return (
     <div className="flex flex-col h-[90%]">
-      <div className="h-[80%] sm:h-full flex flex-col items-center justify-center">
+      <div className="h-[80%] sm:h-full flex flex-col items-center justify-center border-2">
         <div className="text-center font-bold">
           <span style={{ color: settings.secondaryTextColor }}>{title}</span>
           <h2 className="sm:text-5xl text-3xl font-bold">{name}</h2>
@@ -45,7 +45,7 @@ const Project = (props) => {
       <div
         className={`text-center ${
           isGrid ? 'md:w-[100%]' : 'md:w-[70vw]'
-        } mx-auto flex justify-between items-center my-8 px-2 h-[20%]`}
+        } mx-auto flex justify-between items-center mt-8 px-2 h-[20%]`}
       >
         <div className="flex justify-center items-center">
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">

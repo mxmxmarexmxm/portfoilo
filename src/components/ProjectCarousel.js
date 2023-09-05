@@ -32,24 +32,28 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center  justify-around h-screen w-full mt-8 sm:mt-16">
-      <div className="flex justify-between sm:px-4 h-[90%] sm:h-full relative w-full">
+    <div className="flex flex-col items-center justify-around h-screen w-full my-auto">
+      <div className="flex justify-between sm:px-4 h-[90%]  relative w-full ">
         <button onClick={() => carouselHandler('backward')}>
           <Backward
-            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[30%] left-2"
+            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] left-2"
             color={settings.iconsColor}
           />
         </button>
-        <Project {...projectsData[project]} key={project} animation={animation} />
+        <Project
+          {...projectsData[project]}
+          key={project}
+          animation={animation}
+        />
         <button onClick={() => carouselHandler('forward')}>
           <Forward
-            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[30%] right-2"
+            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] right-2"
             color={settings.iconsColor}
           />
         </button>
       </div>
 
-      <div className="bg-gray-500 w-64 h-6 sm:h-8 rounded-2xl flex justify-start overflow-hidden border-2 border-gray-700">
+      <div className="bg-gray-500 w-64 h-6 sm:h-8 rounded-2xl flex justify-start overflow-hidden border-2 border-gray-700 -mt-[8rem]">
         <div
           style={{
             width: `${((project + 1) / projectLength) * 100}%`,
