@@ -7,7 +7,7 @@ const Navbar = (props) => {
   const { settings } = useContext(SettingsContext);
   const { openSettings } = props;
   return (
-    <nav className="smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full  items-center px-8 py-2 sm:py-4 font-semibold z-50">
+    <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full  items-center px-8 py-2 sm:py-4 font-semibold z-50">
       <div className="h-8 w-8 self-start">
         <img
           src={avatar}
@@ -15,7 +15,7 @@ const Navbar = (props) => {
           alt="avatar"
         />
       </div>
-      <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full justify-end items-center text-sm font-semibold ">
+      <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full items-center text-sm font-semibold ">
         <li className="cursor-pointer whitespace-nowrap">
           <a href="#home">Home</a>
         </li>
