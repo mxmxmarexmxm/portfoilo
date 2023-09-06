@@ -53,7 +53,7 @@ const ProjectCarousel = () => {
         </button>
       </div>
 
-      <div className="bg-gray-500 w-64 h-6 sm:h-8 rounded-2xl flex justify-start overflow-hidden border-2 border-gray-700 -mt-[8rem]">
+      <div className="bg-gray-500 w-64 h-6 sm:h-8 rounded-2xl flex justify-start overflow-hidden border-2 border-gray-700 -mt-[6rem]">
         <div
           style={{
             width: `${((project + 1) / projectLength) * 100}%`,
