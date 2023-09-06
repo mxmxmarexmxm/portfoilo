@@ -18,14 +18,14 @@ const Navbar = (props) => {
           sectionTop = current.offsetTop - 50,
           sectionId = current.getAttribute('id');
 
+        const element = document.querySelector(
+          `.nav-menu a[href*='#${sectionId}']`
+        );
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document
-            .querySelector(`.nav-menu a[href*='#${sectionId}']`)
-            .parentElement.classList.add('active-link');
+          element.parentElement.classList.add('active-link');
         } else {
-          document
-            .querySelector(`.nav-menu a[href*='#${sectionId}']`)
-            .parentElement.classList.remove('active-link');
+          element.parentElement.classList.remove('active-link');
         }
       });
     }
@@ -37,7 +37,6 @@ const Navbar = (props) => {
       window.removeEventListener('scroll', scrollActive);
     };
   }, []);
-
   return (
     <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-2 sm:gap-8 w-full items-center px-2 py-2 sm:py-4 font-semibold z-50">
       <div className="w-8 aspect-square self-start">
