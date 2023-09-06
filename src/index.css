@@ -153,7 +153,20 @@ code {
 .active-link {
   position: relative;
   margin-right: auto;
-  color: gray;
+  color: rgb(107 114 128);
   font-size: 1.5rem;
-  transition: 2s;
+  transition: all 2s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.95);
+  }
 }
