@@ -24,8 +24,10 @@ const Navbar = (props) => {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
           element.parentElement.classList.add('active-link');
+          element.style.color = settings.secondaryTextColor;
         } else {
           element.parentElement.classList.remove('active-link');
+          element.style.color = settings.primaryTextColor;
         }
       });
     }
