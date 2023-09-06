@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Settings from '../../assets/icons/settings';
 import { SettingsContext } from '../../context/SettingsContext';
 import avatar from '../../assets/img/nav-avatar.png';
@@ -6,6 +6,38 @@ import avatar from '../../assets/img/nav-avatar.png';
 const Navbar = (props) => {
   const { settings } = useContext(SettingsContext);
   const { openSettings } = props;
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('section[id]');
+
+    function scrollActive() {
+      const scrollY = window.scrollY;
+
+      sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight,
+          sectionTop = current.offsetTop - 50,
+          sectionId = current.getAttribute('id');
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document
+            .querySelector(`.nav-menu a[href*='#${sectionId}']`)
+            .parentElement.classList.add('active-link');
+        } else {
+          document
+            .querySelector(`.nav-menu a[href*='#${sectionId}']`)
+            .parentElement.classList.remove('active-link');
+        }
+      });
+    }
+
+    scrollActive();
+    window.addEventListener('scroll', scrollActive);
+
+    return () => {
+      window.removeEventListener('scroll', scrollActive);
+    };
+  }, []);
+
   return (
     <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-2 sm:gap-8 w-full items-center px-2 py-2 sm:py-4 font-semibold z-50">
       <div className="w-8 aspect-square self-start">

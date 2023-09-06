@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Navbar from './components/ui/Navbar';
 import Layout from './components/ui/layout';
 import Settings from './components/Settings';
@@ -12,36 +12,6 @@ import AboutMe from './pages/about-me';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
-  useEffect(() => {
-    const sections = document.querySelectorAll('section[id]');
-
-    function scrollActive() {
-      const scrollY = window.scrollY;
-
-      sections.forEach((current) => {
-        const sectionHeight = current.offsetHeight,
-          sectionTop = current.offsetTop - 50,
-          sectionId = current.getAttribute('id');
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document
-            .querySelector(`.nav-menu a[href*='#${sectionId}']`)
-            .parentElement.classList.add('active-link');
-        } else {
-          document
-            .querySelector(`.nav-menu a[href*='#${sectionId}']`)
-            .parentElement.classList.remove('active-link');
-        }
-      });
-    }
-
-    scrollActive();
-    window.addEventListener('scroll', scrollActive);
-
-    return () => {
-      window.removeEventListener('scroll', scrollActive);
-    };
-  }, []);
 
   return (
     <SettingsProvider>
