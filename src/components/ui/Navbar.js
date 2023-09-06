@@ -15,7 +15,7 @@ const Navbar = (props) => {
           alt="avatar"
         />
       </div>
-      <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full items-center text-sm font-semibold ">
+      <ul className="flex sm:text-xl gap-4 sm:gap-8 w-full items-center text-sm font-semibold">
         <li className="cursor-pointer whitespace-nowrap">
           <a href="#home">Home</a>
         </li>
@@ -28,7 +28,7 @@ const Navbar = (props) => {
         <li className="cursor-pointer whitespace-nowrap">
           <a href="#contact">Contact</a>
         </li>
-        <li className="cursor-pointer" onClick={openSettings}>
+        <li className="cursor-pointer ml-0" onClick={openSettings}>
           <Settings
             className="cursor-pointer w-6 sm:w-8"
             color={settings.iconsColor}
