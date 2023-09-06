@@ -7,8 +7,8 @@ const Navbar = (props) => {
   const { settings } = useContext(SettingsContext);
   const { openSettings } = props;
   return (
-    <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-8 w-full  items-center px-8 py-2 sm:py-4 font-semibold z-50">
-      <div className="h-8 w-8 self-start">
+    <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-2 sm:gap-8 w-full items-center px-2 py-2 sm:py-4 font-semibold z-50">
+      <div className="w-8 aspect-square self-start">
         <img
           src={avatar}
           className="h-full w-full object-contain"
