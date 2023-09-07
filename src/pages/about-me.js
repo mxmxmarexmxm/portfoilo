@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import LogoBadgeContainer from '../components/ui/logo-badge-container';
+import { SettingsContext } from '../context/SettingsContext';
 
 const AboutMe = () => {
+  const { settings } = useContext(SettingsContext);
   return (
-    <div className="flex items-center flex-col sm:flex-row justify-center min-h-screen text-center w-full sm:px-24 px-8">
+    <div
+      className="flex items-center flex-col sm:flex-row justify-center min-h-screen text-center w-full sm:px-24 px-8"
+      style={{ color: settings.primaryTextColor }}
+    >
       <div className="text-left mb-4 flex-1">
         <p className="text-4xl mb-4">Get to know me!</p>
         <p className="sm:w-3/4">
