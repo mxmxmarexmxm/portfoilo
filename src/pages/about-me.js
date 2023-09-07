@@ -57,14 +57,14 @@ const AboutMe = () => {
         </p>
         <LogoBadgeContainer
           techs={[
-            'react',
-            'next',
-            'tailwind',
-            'graphql',
-            'firebase',
-            'css',
             'html',
+            'css',
             'js',
+            'react',
+            'tailwind',
+            'firebase',
+            'next',
+            'graphql',
             'typescript',
           ]}
         />
