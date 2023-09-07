@@ -1,4 +1,5 @@
 import React from 'react';
+import LogoBadgeContainer from '../components/ui/logo-badge-container';
 
 const AboutMe = () => {
   return (
@@ -54,6 +55,19 @@ const AboutMe = () => {
           sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit
           cursus nunc
         </p>
+        <LogoBadgeContainer
+          techs={[
+            'react',
+            'next',
+            'tailwind',
+            'graphql',
+            'firebase',
+            'css',
+            'html',
+            'js',
+            'typescript',
+          ]}
+        />
       </div>
     </div>
   );
