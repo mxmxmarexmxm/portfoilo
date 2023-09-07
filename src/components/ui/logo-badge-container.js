@@ -7,6 +7,7 @@ import firebase from './../../assets/img/logo/firebase.png';
 import css from './../../assets/img/logo/css.png';
 import html from './../../assets/img/logo/html.png';
 import js from './../../assets/img/logo/js.png';
+import typescript from './../../assets/img/logo/typescript.png';
 
 const logos = {
   react: react,
@@ -17,6 +18,7 @@ const logos = {
   css: css,
   html: html,
   js: js,
+  typescript: typescript,
 };
 
 const LogoBadgeContainer = (props) => {
