@@ -15,15 +15,6 @@ const projects = [
     techs: ['react', 'next', 'tailwind', 'graphql'],
   },
   {
-    title: 'CONTENT MANAGEMENT SYSTEM',
-    name: 'ASM Wartung',
-    projectImg: wartung,
-    description:
-      'Wartung is a comprehensive CMS tailored for businesses, offering seamless content creation, editing, and management capabilities. ',
-    liveUrl: 'https://app.asm-wartung.de/',
-    techs: ['react', 'tailwind'],
-  },
-  {
     title: 'CHAT APPLICATION',
     name: 'ChatFlix',
     projectImg: chatFlix,
@@ -53,6 +44,15 @@ const projects = [
     liveUrl: 'https://mxmxmarexmxm.github.io/it-quiz/',
     githubUrl: 'https://github.com/mxmxmarexmxm/it-quiz',
     techs: ['react', 'css'],
+  },
+  {
+    title: 'CONTENT MANAGEMENT SYSTEM',
+    name: 'ASM Wartung',
+    projectImg: wartung,
+    description:
+      'Wartung is a comprehensive CMS tailored for businesses, offering seamless content creation, editing, and management capabilities. ',
+    liveUrl: 'https://app.asm-wartung.de/',
+    techs: ['react', 'tailwind'],
   },
 ];
 
