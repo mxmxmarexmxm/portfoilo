@@ -12,7 +12,7 @@ const projects = [
     description:
       'Online store for selling mobile devices equipment, especially for covers.',
     liveUrl: 'https://maske.rs/',
-    techs: ['react', 'next', 'tailwind', 'graphql'],
+    techs: ['react', 'typescript', 'next', 'tailwind', 'graphql'],
   },
   {
     title: 'CHAT APPLICATION',
