@@ -5,6 +5,7 @@ import avatar from '../../assets/img/nav-avatar.png';
 
 const Navbar = (props) => {
   const { settings } = useContext(SettingsContext);
+  const { primaryTextColor, secondaryTextColor } = settings;
   const { openSettings } = props;
 
   useEffect(() => {
@@ -24,10 +25,10 @@ const Navbar = (props) => {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
           element.parentElement.classList.add('active-link');
-          element.style.color = settings.secondaryTextColor;
+          element.style.color = secondaryTextColor;
         } else {
           element.parentElement.classList.remove('active-link');
-          element.style.color = settings.primaryTextColor;
+          element.style.color = primaryTextColor;
         }
       });
     }
@@ -38,7 +39,8 @@ const Navbar = (props) => {
     return () => {
       window.removeEventListener('scroll', scrollActive);
     };
-  }, []);
+  }, [primaryTextColor, secondaryTextColor]);
+
   return (
     <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-2 sm:gap-8 w-full items-center px-2 py-2 sm:py-4 font-semibold z-50">
       <div className="w-8 aspect-square self-start">
