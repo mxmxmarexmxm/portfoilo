@@ -7,6 +7,8 @@ import firebase from './../../assets/img/logo/firebase.png';
 import css from './../../assets/img/logo/css.png';
 import html from './../../assets/img/logo/html.png';
 import js from './../../assets/img/logo/js.png';
+import work from './../../assets/img/logo/work.png';
+import personalProject from './../../assets/img/logo/personal-project.png';
 import typescript from './../../assets/img/logo/typescript.png';
 
 const logos = {
@@ -19,6 +21,8 @@ const logos = {
   html: html,
   js: js,
   typescript: typescript,
+  personalProject: personalProject,
+  work: work,
 };
 
 const LogoBadgeContainer = (props) => {
@@ -32,7 +36,7 @@ const LogoBadgeContainer = (props) => {
         >
           <img
             src={logos[tech]}
-            className="w-full object-contain hover:scale-125 "
+            className={`w-full object-contain hover:scale-125`}
             alt={`${tech}-logo`}
           />
         </div>
