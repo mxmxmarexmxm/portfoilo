@@ -52,7 +52,7 @@ const projects = [
     description:
       'Wartung is a comprehensive CMS tailored for businesses, offering seamless content creation, editing, and management capabilities. ',
     liveUrl: 'https://app.asm-wartung.de/',
-    techs: ['work', ' react', 'tailwind'],
+    techs: ['work', 'react', 'tailwind'],
   },
 ];
 
