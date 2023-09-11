@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import LogoBadgeContainer from './ui/logo-badge-container';
+import LogoBadgeContainer from './ui/LogoBadgeContainer';
 import { SettingsContext } from '../context/SettingsContext';
 import LiveWebIcon from '../assets/icons/liveweb';
 import GithubIcon from '../assets/icons/github';

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import LogoBadgeContainer from '../components/ui/logo-badge-container';
+import LogoBadgeContainer from '../components/ui/LogoBadgeContainerr';
 import { SettingsContext } from '../context/SettingsContext';
 
 const AboutMe = () => {
