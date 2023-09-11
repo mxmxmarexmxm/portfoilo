@@ -21,8 +21,8 @@ const logos = {
   html: html,
   js: js,
   typescript: typescript,
-  personalProject: personalProject,
-  work: work,
+  // personalProject: personalProject,
+  // work: work,
 };
 
 const LogoBadgeContainer = (props) => {
