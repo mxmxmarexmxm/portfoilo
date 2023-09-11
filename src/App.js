@@ -5,7 +5,6 @@ import Settings from './components/Settings';
 import Modal from './components/ui/Modal';
 import SettingsProvider from './context/SettingsContext';
 import Home from './pages/home';
-// import Home from './pages/Home';
 import Work from './pages/work';
 import Contact from './pages/contact';
 import AboutMe from './pages/about-me';
