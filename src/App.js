@@ -28,7 +28,7 @@ function App() {
           <section id="about-me">
             <AboutMe />
           </section>
-          <section id="work" className="sm:pt-[2em]">
+          <section id="work">
             <Work />
           </section>
           <section id="contact">
