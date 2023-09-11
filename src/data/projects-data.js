@@ -12,7 +12,7 @@ const projects = [
     description:
       'Online store for selling mobile devices equipment, especially for covers.',
     liveUrl: 'https://maske.rs/',
-    techs: ['work', 'react', 'typescript', 'next', 'tailwind', 'graphql'],
+    techs: ['react', 'typescript', 'next', 'tailwind', 'graphql'],
   },
   {
     title: 'CHAT APPLICATION',
@@ -22,7 +22,7 @@ const projects = [
       'ChatFilx is an IT-focused chat application that fosters collaborative discussions and knowledge sharing among professionals in a user-friendly environment.',
     liveUrl: 'https://mxmxmarexmxm.github.io/ChatFlix/',
     githubUrl: 'https://github.com/mxmxmarexmxm/ChatFlix',
-    techs: ['personalProject', 'react', 'css', 'firebase'],
+    techs: ['react', 'css', 'firebase'],
   },
   {
     title: 'SHORT CONTENT BLOCKER',
@@ -33,7 +33,7 @@ const projects = [
       'AntiReels is a simple extension for Firefox and Chrome that helps you stay focused and productive by blocking short content from Facebook, Instagram, TikTok and YouTube. ',
     liveUrl: 'https://addons.mozilla.org/en-US/firefox/addon/antireels',
     githubUrl: 'https://github.com/mxmxmarexmxm/AntiReels',
-    techs: ['personalProject', 'html', 'css', 'js'],
+    techs: ['html', 'css', 'js'],
   },
   {
     title: 'QUIZ APPLICATION',
@@ -43,7 +43,7 @@ const projects = [
       'IT Quiz is a simple quiz application. It provides a collection of IT-related questions and allows users to test their knowledge in various IT domains.',
     liveUrl: 'https://mxmxmarexmxm.github.io/it-quiz/',
     githubUrl: 'https://github.com/mxmxmarexmxm/it-quiz',
-    techs: ['personalProject', 'react', 'css'],
+    techs: ['react', 'css'],
   },
   {
     title: 'CONTENT MANAGEMENT SYSTEM',
@@ -52,7 +52,7 @@ const projects = [
     description:
       'Wartung is a comprehensive CMS tailored for businesses, offering seamless content creation, editing, and management capabilities. ',
     liveUrl: 'https://app.asm-wartung.de/',
-    techs: ['work', 'react', 'tailwind'],
+    techs: ['react', 'tailwind'],
   },
 ];
 
