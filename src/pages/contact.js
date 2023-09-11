@@ -1,4 +1,4 @@
-import EmailContactForm from '../components/email-contact-form';
+import EmailContactForm from '../components/EmailContactForm';
 
 const Contact = () => {
   return (

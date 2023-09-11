@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navbar from './components/ui/Navbar';
-import Layout from './components/ui/layout';
+import Layout from './components/ui/Layout';
 import Settings from './components/Settings';
 import Modal from './components/ui/Modal';
 import SettingsProvider from './context/SettingsContext';
