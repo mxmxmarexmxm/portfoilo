@@ -26,9 +26,13 @@ const logos = {
 };
 
 const LogoBadgeContainer = (props) => {
-  const { techs, animation } = props;
+  const { techs, animation, justify } = props;
   return (
-    <div className="w-full flex justify-center items-center gap-4 flex-wrap">
+    <div
+      className={`w-full flex items-center gap-4 flex-wrap ${
+        justify === 'justify-start' ? 'justify-start' : 'justify-center'
+      } `}
+    >
       {techs.map((tech) => (
         <div
           key={tech}
