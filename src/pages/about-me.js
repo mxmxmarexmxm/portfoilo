@@ -7,14 +7,14 @@ const AboutMe = () => {
   const { settings } = useContext(SettingsContext);
   return (
     <div
-      className="sm:pt-[2rem] border-2 gap-32 flex items-center flex-col justify-end min-h-screen"
+      className="sm:pt-[2rem] sm:gap-32 gap-16 flex items-center flex-col justify-end min-h-screen font-elite"
       style={{ color: settings.primaryTextColor }}
     >
       <div>
-        <h1 className="text-center text-7xl mb-4 font-elite ">
+        <h1 className="text-center sm:text-7xl text-4xl mb-4">
           Welcome to my portfolio!
         </h1>
-        <h2 className="text-center text-3xl code ">
+        <h2 className="text-center sm:text-3xl text-lg ">
           If you'd like to customize it, click on the{' '}
           <Settings
             className="w-8 h-8 inline mb-3"
@@ -25,8 +25,8 @@ const AboutMe = () => {
       </div>
       <div className="flex items-start flex-col sm:flex-row justify-center text-center w-full sm:px-24 px-8">
         <div className="text-left mb-4 flex-1">
-          <p className="text-4xl mb-4 font-elite">Get to know me!</p>
-          <div className="sm:w-3/4 text-xl font-semibold flex flex-col gap-6 code">
+          <p className="sm:text-4xl text-3xl mb-4">Get to know me!</p>
+          <div className="sm:w-3/4 sm:text-xl font-semibold flex flex-col gap-6 code">
             <p>
               Hello, I'm Marinko Malencic, a Frontend Web Developer. I
               discovered my passion for computers and the online world during
@@ -56,16 +56,16 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-        <div className="text-left flex-1">
-          <div className="mb-24">
-            <p className="text-4xl mb-4 font-elite">Skills</p>
+        <div className="text-left flex-1 sm:text-4xl text-3xl mt-8 sm:mt-0">
+          <div className="sm:mb-24 mb-12">
+            <p className="mb-4">Skills</p>
             <LogoBadgeContainer
               justify="justify-start"
               techs={['html', 'css', 'js', 'react', 'tailwind']}
             />
           </div>
           <div>
-            <p className="text-4xl mb-4 font-elite">Familiar with</p>
+            <p className="mb-4">Familiar with</p>
             <LogoBadgeContainer
               justify="justify-start"
               techs={['typescript', 'next', 'graphql', 'firebase']}
