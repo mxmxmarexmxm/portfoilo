@@ -7,7 +7,7 @@ const AboutMe = () => {
   const { settings } = useContext(SettingsContext);
   return (
     <div
-      className="sm:pt-[2rem] sm:gap-32 gap-16 flex items-center flex-col justify-end min-h-screen font-elite"
+      className="sm:pt-[2rem] sm:gap-32 gap-16 flex items-center flex-col justify-end min-h-screen font-elite pt-16"
       style={{ color: settings.primaryTextColor }}
     >
       <div>
