@@ -17,7 +17,7 @@ const AboutMe = () => {
         <h2 className="text-center sm:text-3xl text-lg ">
           If you'd like to customize it, click on the{' '}
           <Settings
-            className="w-8 h-8 inline mb-3"
+            className="w-6 sm:w-8 aspect-square inline sm:mb-3"
             color={settings.iconsColor}
           />{' '}
           icon above!
