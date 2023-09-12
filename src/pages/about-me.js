@@ -23,7 +23,7 @@ const AboutMe = () => {
           icon above!
         </h2>
       </div>
-      <div className="flex items-start flex-col sm:flex-row justify-center text-center w-full sm:px-24 px-8">
+      <div className="flex items-start flex-col sm:flex-row justify-center text-center w-full xl:px-24 px-8">
         <div className="text-left mb-4 flex-1">
           <p className="sm:text-4xl text-3xl mb-4">Get to know me!</p>
           <div className="sm:w-3/4 sm:text-xl font-semibold flex flex-col gap-6 code">
