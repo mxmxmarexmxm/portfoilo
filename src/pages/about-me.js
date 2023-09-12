@@ -61,7 +61,7 @@ const AboutMe = () => {
             <p className="text-4xl mb-4 font-elite">Skills</p>
             <LogoBadgeContainer
               justify="justify-start"
-              techs={['html', 'css', 'js', 'react', 'tailwind', 'responsive']}
+              techs={['html', 'css', 'js', 'react', 'tailwind']}
             />
           </div>
           <div>
