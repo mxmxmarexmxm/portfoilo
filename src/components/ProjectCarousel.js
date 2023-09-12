@@ -32,7 +32,7 @@ const ProjectCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-around h-screen w-full my-auto sm:pt-[2em]">
+    <div className="flex flex-col items-center justify-around h-screen w-full my-auto sm:pt-[2rem]">
       <div className="flex justify-between sm:px-4 h-[90%]  relative w-full ">
         <button onClick={() => carouselHandler('backward')}>
           <Backward
