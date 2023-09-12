@@ -41,6 +41,8 @@ const AboutMe = () => {
               <a
                 href="https://www.wolken-asm.de/"
                 className="underline"
+                target="_blank"
+                rel="noreferrer"
                 style={{ color: settings.secondaryTextColor }}
               >
                 Wolken-ASM GmbH
