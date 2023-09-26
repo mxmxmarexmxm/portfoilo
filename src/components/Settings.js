@@ -4,7 +4,7 @@ import { SettingsContext } from '../context/SettingsContext';
 import InfoIcon from '../assets/icons/info';
 
 const defaultValues = {
-  fps: 11,
+  fps: 17,
   animationTextColor: '#292727',
   charset: 'M',
   size: 12,
