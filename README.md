@@ -1,4 +1,4 @@
-# Portfolio (Work in Progress)
+# Portfolio
 
 Welcome to my portfolio! This project is organized into four main sections:
 
