@@ -225,7 +225,7 @@ const Settings = (props) => {
               className="rounded-xl flex"
               onClick={() => saveSettingsToLocalStorage()}
             >
-              Save
+              Remeber
             </button>
             <div className="relative group">
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
@@ -233,7 +233,7 @@ const Settings = (props) => {
                 style={{ color: settings.primaryTextColor }}
                 className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-600 p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
-                Save settings for the next time you visit my portfolio.
+                Remeber settings for the next time you visit my portfolio.
               </div>
             </div>
           </div>
@@ -277,14 +277,17 @@ const Settings = (props) => {
         </div>
         <div className="flex gap-4 justify-center h-12 mt-4">
           <button
+            type="submit"
+            className="w-32 bg-[#323232] border-[1px] border-[#454545]  rounded-xl"
+          >
+            Save
+          </button>
+          <button
             type="button"
-            className="w-32 bg-gray-900 rounded-xl"
+            className="w-32 bg-[#232323] border-[1px] border-[#2e2e2e] rounded-xl"
             onClick={() => setIsOpen(false)}
           >
             Cancel
-          </button>
-          <button type="submit" className="w-32 bg-gray-600 rounded-xl">
-            Ok
           </button>
         </div>
       </form>
