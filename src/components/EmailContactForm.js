@@ -85,8 +85,7 @@ const EmailContactForm = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        style={{ backgroundColor: settings.containersColor }}
-        className={`flex w-full mx-4 flex-col h-max md:h-auto p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 md:mb-8 rounded-xl border-2 border-gray-600`}
+        className={`bg-[#050505] flex w-full mx-4 flex-col h-max md:h-auto p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 md:mb-8 rounded-xl border-4 border-[#212121]`}
       >
         <label className="font-bold text-lg sm:text-xl">Name</label>
         <input
@@ -114,7 +113,7 @@ const EmailContactForm = () => {
         <input
           type="submit"
           value="Send"
-          className="p-2 sm:p-4 mt-4 text-xl rounded-lg bg-zinc-900 font-bold cursor-pointer border-4 border-gray-600"
+          className="p-2 sm:p-4 mt-4 text-xl rounded-lg bg-zinc-900 font-bold cursor-pointer border-4 border-[#212121]"
         />
         <div className="flex h-14 justify-center gap-4 sm:mt-8">
           <div className="flex">
