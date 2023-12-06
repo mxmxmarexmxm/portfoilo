@@ -69,7 +69,7 @@ const EmailContactForm = () => {
       {emailStatus && (
         <div className="fixed top-0 left-0 flex justify-center bg-[rgba(0,0,0,0.9)] w-full h-full items-center ">
           <div
-            style={{ backgroundColor: settings.containersColor }}
+            style={{ backgroundColor: settings.formBackgroundColor }}
             className="rounded-xl w-[90vw] md:w-[650px] p-8 flex items-center gap-10 text-base flex-col md:text-xl border-2 border-gray-500"
           >
             {messageAlertContent}
@@ -85,7 +85,8 @@ const EmailContactForm = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className={`bg-[#050505] flex w-full mx-4 flex-col h-max md:h-auto p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 md:mb-8 rounded-xl border-4 border-[#212121]`}
+        style={{ backgroundColor: settings.formBackgroundColor }}
+        className={`flex w-full mx-4 flex-col h-max md:h-auto p-4 sm:p-16 sm:pb-4 xl:w-1/2 md:w-5/6 m-auto gap-4 md:mb-8 rounded-xl border-4 border-[#212121]`}
       >
         <label className="font-bold text-lg sm:text-xl">Name</label>
         <input

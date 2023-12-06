@@ -14,7 +14,7 @@ const defaultValues = {
   secondaryTextColor: '#6b7280',
   backgroundColor: '#0000000D',
   iconsColor: '#ffffff',
-  containersColor: '#374151',
+  formBackgroundColor: '#080808',
 };
 
 const Settings = (props) => {
@@ -44,7 +44,7 @@ const Settings = (props) => {
         secondaryTextColor: generateRandomColor(),
         backgroundColor: generateRandomColor(),
         iconsColor: generateRandomColor(),
-        containersColor: generateRandomColor(),
+        formBackgroundColor: generateRandomColor(),
       };
     });
   };
@@ -197,13 +197,13 @@ const Settings = (props) => {
           </div>
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="containersColor">Containers Color</label>
+          <label htmlFor="formBackgroundColor">Form Background Color</label>
           <div className="rounded-full border-2 border-white flex items-center justify-center overflow-hidden w-10 h-10">
             <input
               className="text-black cursor-pointer h-[50px] w-[50px] aspect-square"
               type="color"
-              name="containersColor"
-              value={formState.containersColor}
+              name="formBackgroundColor"
+              value={formState.formBackgroundColor}
               onChange={handleInputChange}
             />
           </div>
