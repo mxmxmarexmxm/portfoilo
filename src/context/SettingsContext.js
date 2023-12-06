@@ -5,7 +5,7 @@ export const SettingsContext = createContext();
 const SettingsProvider = ({ children }) => {
   const [settings, setSettings] = useState({
     fps: 17,
-    animationTextColor: '#292727',
+    animationTextColor: '#050505',
     charset: 'M',
     size: 12,
     animation: true,
