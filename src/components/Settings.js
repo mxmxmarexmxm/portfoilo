@@ -278,13 +278,13 @@ const Settings = (props) => {
         <div className="flex gap-4 justify-center h-12 mt-4">
           <button
             type="submit"
-            className="w-32 bg-[#323232] border-[1px] border-[#454545]  rounded-xl"
+            className="w-32 bg-[#323232] border-[1px] border-[#454545] rounded-xl hover:opacity-70"
           >
             Save
           </button>
           <button
             type="button"
-            className="w-32 bg-[#232323] border-[1px] border-[#2e2e2e] rounded-xl"
+            className="w-32 bg-[#232323] border-[1px] border-[#2e2e2e] rounded-xl hover:opacity-70"
             onClick={() => setIsOpen(false)}
           >
             Cancel
