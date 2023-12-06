@@ -5,7 +5,7 @@ import InfoIcon from '../assets/icons/info';
 
 const defaultValues = {
   fps: 17,
-  animationTextColor: '#050505',
+  animationTextColor: '#151515',
   charset: 'M',
   size: 12,
   animation: true,
