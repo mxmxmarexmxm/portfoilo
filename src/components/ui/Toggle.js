@@ -22,7 +22,7 @@ const Toggle = ({ label, defaultOn, onChange }) => {
             checked={defaultOn}
             onChange={(e) => onChange(e.target.checked)}
           />
-          <div className="block bg-gray1 w-14 h-8 rounded-full">
+          <div className="block bg-gray-950 w-14 h-8 rounded-full">
             <div
               className={`absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition-transform ${
                 defaultOn ? 'translate-x-6' : ''

@@ -231,7 +231,7 @@ const Settings = (props) => {
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray1 border-[1px] border-[#454545] p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
+                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-950 border-[1px] border-[#454545] p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
                 Remeber settings for the next time you visit my portfolio.
               </div>
@@ -250,7 +250,7 @@ const Settings = (props) => {
 
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray1 border-[1px] border-[#454545] p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
+                className="absolute left-0 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-950 border-[1px] border-[#454545] p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
                 Reset settings to their default values.
               </div>
@@ -268,7 +268,7 @@ const Settings = (props) => {
               <InfoIcon className="w-6 h-6" color={settings.iconsColor} />
               <div
                 style={{ color: settings.primaryTextColor }}
-                className="absolute -left-8 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray1 border-[1px] border-[#454545] p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
+                className="absolute -left-8 bottom-full transform -translate-x-1/2 rounded-md w-40 bg-gray-950 border-[1px] border-[#454545] p-2 opacity-0 font-normal text-sm transition-opacity duration-300 invisible group-hover:opacity-100 group-hover:visible"
               >
                 Generate random colors for my portfolio.
               </div>
@@ -284,7 +284,7 @@ const Settings = (props) => {
           </button>
           <button
             type="button"
-            className="w-32 bg-[#232323] border-[1px] border-gray1 rounded-xl hover:opacity-70"
+            className="w-32 bg-[#232323] border-[1px] border-gray-950 rounded-xl hover:opacity-70"
             onClick={() => setIsOpen(false)}
           >
             Cancel
