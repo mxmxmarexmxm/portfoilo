@@ -77,7 +77,7 @@ const Settings = (props) => {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col justify-between flex-1 gap-4 sm:text-xl font-bold"
+        className="flex flex-col justify-between flex-1 gap-4 sm:text-lg"
       >
         <div className="flex items-center gap-4 w-full justify-center self-center mt-4">
           <div className="flex-1 border-t border-gray-300"></div>
