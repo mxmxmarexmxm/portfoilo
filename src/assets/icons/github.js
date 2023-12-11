@@ -1,23 +1,14 @@
 const GithubIcon = ({ className, color }) => {
   return (
-    // <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-    // <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
     <svg
       viewBox="0 0 20 20"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      // xmlns:xlink="http://www.w3.org/1999/xlink"
       className={className}
     >
-      <title>github [#142]</title>
-      <desc>Created with Sketch.</desc>
+      <title>GitHub</title>
       <defs></defs>
-      <g
-        id="Page-1"
-        stroke="none"
-        strokeWidth="1"
-        fillRule="evenodd"
-      >
+      <g id="Page-1" stroke="none" strokeWidth="1" fillRule="evenodd">
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-140.000000, -7559.000000)"
