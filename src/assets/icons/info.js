@@ -1,16 +1,12 @@
 const InfoIcon = ({ className, color }) => {
   return (
-    // <?xml version="1.0" encoding="utf-8"?>
-
-    // <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
     <svg
-      // width="800px"
-      // height="800px"
       viewBox="0 0 24 24"
-      fill='none'
+      fill="none"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Info</title>
       <g id="Warning / Info">
         <path
           id="Vector"

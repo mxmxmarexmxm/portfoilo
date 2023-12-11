@@ -7,10 +7,7 @@ const DoneIcon = ({ className, color }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <title>
-        interface / 8 - interface, radio button, checked, checkmark, done, to
-        do, radio icon
-      </title>
+      <title>Done</title>
       <g
         id="Free-Icons"
         stroke="none"

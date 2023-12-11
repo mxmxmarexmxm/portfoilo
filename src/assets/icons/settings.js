@@ -1,13 +1,7 @@
 const Settings = ({ className, color }) => {
   return (
-    <svg
-      // width="800px"
-      // height="800px"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
+    <svg fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <title>Settings</title>
       <path
         fillRule="evenodd"
         clipRule="evenodd"
