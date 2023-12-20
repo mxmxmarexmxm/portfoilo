@@ -1,6 +1,10 @@
 # Portfolio
 
-Welcome to my portfolio! This project is organized into four main sections:
+Welcome to my portfolio!
+
+You can check out the live demo of my portfolio [here](https://mxmxmarexmxm.github.io/portfolio/).
+
+This project is organized into four main sections:
 
 1.  **Home**
 
