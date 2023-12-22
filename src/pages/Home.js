@@ -3,6 +3,7 @@ import { SettingsContext } from '../context/SettingsContext';
 
 const Home = () => {
   const [subtitle, setSubtitle] = useState('');
+  const [visibleDownloadBtn, setVisibleDownloadBtn] = useState(false);
   const { settings } = useContext(SettingsContext);
   let charIndex = 0;
 
@@ -15,6 +16,7 @@ const Home = () => {
           setSubtitle((prevText) => prevText + subtitleText.charAt(charIndex));
           charIndex++;
         } else {
+          setVisibleDownloadBtn(true);
           clearInterval(interval); // Stop the interval when typing is complete
         }
       }, 90);
@@ -64,6 +66,9 @@ const Home = () => {
               color: settings.secondaryTextColor,
               border: `2px solid ${settings.secondaryTextColor}`,
             }}
+            className={`text-xl p-3 animate-pulse rounded-lg ${
+              visibleDownloadBtn ? 'visible' : 'hidden'
+            }`}
           >
             <a href="/Marinko-Malencic-CV.pdf" download>
               Download my Resume
