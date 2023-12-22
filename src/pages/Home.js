@@ -59,6 +59,16 @@ const Home = () => {
           <div className="typewriter">
             <h2>{subtitle}</h2>
           </div>
+          <button
+            style={{
+              color: settings.secondaryTextColor,
+              border: `2px solid ${settings.secondaryTextColor}`,
+            }}
+          >
+            <a href="/Marinko-Malencic-CV.pdf" download>
+              Download my Resume
+            </a>
+          </button>
         </div>
       </div>
     </div>
