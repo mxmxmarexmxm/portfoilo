@@ -32,9 +32,9 @@ const Home = () => {
   }, [charIndex]);
 
   return (
-    <div className="flex items-center justify-start h-screen text-center w-full font-elite">
-      <div className="w-full flex flex-col gap-8">
-        <div className="md:text-[25rem] sm:text-[18rem]  text-[10rem] font-semibold flex md:leading-[18rem] leading-none sm:leading-[12rem] justify-center">
+    <div className="h-screen text-center w-full font-elite relative">
+      <div className="w-full justify-center flex flex-col gap-8 absolute top-[24%]">
+        <div className="md:text-[25rem] sm:text-[18rem] text-[10rem] font-semibold flex md:leading-[18rem] leading-none sm:leading-[12rem] justify-center">
           <div className="bounce-in-m-1">
             <span className="whitespace-nowrap">
               M
