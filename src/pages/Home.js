@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { SettingsContext } from '../context/SettingsContext';
+import resumeFile from '../assets/Marinko-Malencic-CV.pdf';
 
 const Home = () => {
   const [subtitle, setSubtitle] = useState('');
@@ -70,7 +71,7 @@ const Home = () => {
               visibleDownloadBtn ? 'visible' : 'hidden'
             }`}
           >
-            <a href="/Marinko-Malencic-CV.pdf" download>
+            <a href={resumeFile} download="Marinko Malencic CV.pdf">
               Download my Resume
             </a>
           </button>
