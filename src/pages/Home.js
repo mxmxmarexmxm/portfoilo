@@ -62,19 +62,19 @@ const Home = () => {
           <div className="typewriter">
             <h2>{subtitle}</h2>
           </div>
-          <button
-            style={{
-              color: settings.secondaryTextColor,
-              border: `2px solid ${settings.secondaryTextColor}`,
-            }}
-            className={`text-sm sm:text-xl p-3 animate-pulse rounded-lg ${
-              visibleDownloadBtn ? 'visible' : 'hidden'
-            }`}
-          >
-            <a href={resumeFile} download="Marinko Malencic CV.pdf">
+          <a href={resumeFile} download="Marinko Malencic CV.pdf">
+            <button
+              style={{
+                color: settings.secondaryTextColor,
+                border: `2px solid ${settings.secondaryTextColor}`,
+              }}
+              className={`text-sm sm:text-xl p-3 animate-pulse rounded-lg ${
+                visibleDownloadBtn ? 'visible' : 'hidden'
+              }`}
+            >
               Download my Resume
-            </a>
-          </button>
+            </button>
+          </a>
         </div>
       </div>
     </div>
