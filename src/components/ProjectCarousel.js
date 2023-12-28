@@ -36,7 +36,7 @@ const ProjectCarousel = () => {
       <div className="flex justify-between sm:px-4 h-[90%]  relative w-full ">
         <button onClick={() => carouselHandler('previous')}>
           <Previous
-            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] left-2"
+            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] left-2 sm:left-8"
             color={settings.iconsColor}
           />
         </button>
@@ -47,7 +47,7 @@ const ProjectCarousel = () => {
         />
         <button onClick={() => carouselHandler('next')}>
           <Next
-            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] right-2"
+            className="cursor-pointer w-8 sm:w-12 xl:w-24 absolute top-[37%] right-2 sm:right-8"
             color={settings.iconsColor}
           />
         </button>
