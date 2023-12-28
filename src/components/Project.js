@@ -50,18 +50,20 @@ const Project = (props) => {
         <div className="flex justify-center items-center">
           <a href={liveUrl} target="_blank" rel="noopener noreferrer">
             <LiveWebIcon
-              className={`h-14 ${isGrid ? 'sm:h-16' : 'sm:h-28'} ${
+              className={`h-14 ${isGrid ? 'sm:h-16' : 'sm:h-24'} ${
                 !liveUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               color={settings.iconsColor}
             />
           </a>
         </div>
-        <p className="sm:max-w-[50%] max-w-[65%] -ml-5">{description}</p>
+        <p className="sm:max-w-[50%] max-w-[65%] -ml-5 sm:text-lg">
+          {description}
+        </p>
         <div>
           <a href={githubUrl} target="_blank" rel="noopener noreferrer">
             <GithubIcon
-              className={`h-10 ${isGrid ? 'sm:h-12' : 'sm:h-20'} ${
+              className={`h-10 ${isGrid ? 'sm:h-12' : 'sm:h-16'} ${
                 !githubUrl ? 'blur-sm cursor-not-allowed' : 'hover:scale-125'
               }`}
               color={settings.iconsColor}
