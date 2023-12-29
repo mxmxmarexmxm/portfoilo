@@ -42,7 +42,7 @@ const Navbar = (props) => {
   }, [primaryTextColor, secondaryTextColor]);
 
   return (
-    <nav className="nav-menu smooth-scroll flex fixed bg-[#000000] top-0 right-0 gap-2 sm:gap-8 w-full items-center px-2 py-2 sm:py-4 font-semibold z-50">
+    <nav className="nav-menu smooth-scroll flex fixed bg-[#080806] z-8 top-0 right-0 gap-2 sm:gap-8 w-full items-center px-2 py-2 sm:py-4 font-semibold z-50">
       <div className="w-8 aspect-square self-start">
         <img
           src={avatar}
