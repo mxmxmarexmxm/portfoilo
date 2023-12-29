@@ -68,7 +68,7 @@ const Home = () => {
                 color: settings.secondaryTextColor,
                 border: `2px solid ${settings.secondaryTextColor}`,
               }}
-              className={`text-sm sm:text-xl p-3 animate-pulse rounded-lg ${
+              className={`text-sm sm:text-xl p-3 bg-[#080806] animate-pulse rounded-lg ${
                 visibleDownloadBtn ? 'visible' : 'hidden'
               }`}
             >
