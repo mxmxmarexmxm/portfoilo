@@ -5,6 +5,7 @@ import { SettingsContext } from '../context/SettingsContext';
 import GithubIcon from '../assets/icons/github';
 import DoneIcon from '../assets/icons/done';
 import FailedIcon from '../assets/icons/failed';
+import MailIcon from '../assets/icons/mail';
 
 const EmailContactForm = () => {
   const [emailStatus, setEmailStatus] = useState(null);
@@ -136,6 +137,17 @@ const EmailContactForm = () => {
             >
               <LinkedinIcon className="h-full" color={settings.iconsColor} />
             </a>
+          </div>
+          <div className="flex">
+            <button
+              type="button"
+              className="w-auto h-12"
+              onClick={() =>
+                navigator.clipboard.writeText('marinko.malencic542@gmail.com')
+              }
+            >
+              <MailIcon className="h-full" color={settings.iconsColor} />
+            </button>
           </div>
         </div>
       </form>
