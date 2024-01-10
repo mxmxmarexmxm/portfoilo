@@ -151,7 +151,7 @@ const EmailContactForm = () => {
               <MailIcon className="h-full" color={settings.iconsColor} />
             </button>
           </div>
-          <div className="flex">
+          {/* <div className="flex">
             <button
               type="button"
               className="w-auto h-12"
@@ -161,7 +161,7 @@ const EmailContactForm = () => {
             >
               <PhoneIcon className="h-full" color={settings.iconsColor} />
             </button>
-          </div>
+          </div> */}
         </div>
       </form>
     </>
