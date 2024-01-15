@@ -5,8 +5,8 @@ import { SettingsContext } from '../context/SettingsContext';
 import GithubIcon from '../assets/icons/github';
 import DoneIcon from '../assets/icons/done';
 import FailedIcon from '../assets/icons/failed';
-import MailIcon from '../assets/icons/mail';
-import PhoneIcon from '../assets/icons/phone';
+// import MailIcon from '../assets/icons/mail';
+// import PhoneIcon from '../assets/icons/phone';
 
 const EmailContactForm = () => {
   const [emailStatus, setEmailStatus] = useState(null);
@@ -140,7 +140,7 @@ const EmailContactForm = () => {
             </a>
           </div>
           {/* ADD SUCCESS MESSSAGE */}
-          <div className="flex">
+          {/* <div className="flex">
             <button
               type="button"
               className="w-auto h-12"
@@ -151,7 +151,7 @@ const EmailContactForm = () => {
               <MailIcon className="h-full" color={settings.iconsColor} />
             </button>
           </div>
-          {/* <div className="flex">
+          <div className="flex">
             <button
               type="button"
               className="w-auto h-12"
