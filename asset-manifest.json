@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.97b366d1.css",
-    "main.js": "/portfolio/static/js/main.3dea4bf8.js",
-    "static/media/chatflix.png": "/portfolio/static/media/chatflix.5915fab98be6f8b43ec3.png",
-    "static/media/maske.png": "/portfolio/static/media/maske.f7837809f19388a323c5.png",
-    "static/media/it-quiz.png": "/portfolio/static/media/it-quiz.f3a09f87e0dce14dc29b.png",
-    "static/media/wartung.png": "/portfolio/static/media/wartung.50be1e8f6965c5958961.png",
-    "static/media/Marinko-Malencic-CV.pdf": "/portfolio/static/media/Marinko-Malencic-CV.7568224bacd94de25f34.pdf",
-    "static/media/antireels.png": "/portfolio/static/media/antireels.13042f62496b83f3b323.png",
-    "static/media/nav-avatar.png": "/portfolio/static/media/nav-avatar.3fc3f65241648118a1d9.png",
-    "static/media/personal-project.png": "/portfolio/static/media/personal-project.a30281525d02eb7fd3c3.png",
-    "static/media/work.png": "/portfolio/static/media/work.bcde0cd2fe67175aee7a.png",
-    "index.html": "/portfolio/index.html",
-    "main.97b366d1.css.map": "/portfolio/static/css/main.97b366d1.css.map",
-    "main.3dea4bf8.js.map": "/portfolio/static/js/main.3dea4bf8.js.map"
+    "main.css": "/task-manager-test/static/css/main.38920b09.css",
+    "main.js": "/task-manager-test/static/js/main.dc2aec85.js",
+    "static/media/chatflix.png": "/task-manager-test/static/media/chatflix.5915fab98be6f8b43ec3.png",
+    "static/media/maske.png": "/task-manager-test/static/media/maske.f7837809f19388a323c5.png",
+    "static/media/it-quiz.png": "/task-manager-test/static/media/it-quiz.f3a09f87e0dce14dc29b.png",
+    "static/media/wartung.png": "/task-manager-test/static/media/wartung.50be1e8f6965c5958961.png",
+    "static/media/Marinko-Malencic-CV.pdf": "/task-manager-test/static/media/Marinko-Malencic-CV.7568224bacd94de25f34.pdf",
+    "static/media/antireels.png": "/task-manager-test/static/media/antireels.13042f62496b83f3b323.png",
+    "static/media/nav-avatar.png": "/task-manager-test/static/media/nav-avatar.3fc3f65241648118a1d9.png",
+    "static/media/personal-project.png": "/task-manager-test/static/media/personal-project.a30281525d02eb7fd3c3.png",
+    "static/media/work.png": "/task-manager-test/static/media/work.bcde0cd2fe67175aee7a.png",
+    "index.html": "/task-manager-test/index.html",
+    "main.38920b09.css.map": "/task-manager-test/static/css/main.38920b09.css.map",
+    "main.dc2aec85.js.map": "/task-manager-test/static/js/main.dc2aec85.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b366d1.css",
-    "static/js/main.3dea4bf8.js"
+    "static/css/main.38920b09.css",
+    "static/js/main.dc2aec85.js"
   ]
 }
