@@ -4,10 +4,10 @@ import Layout from './components/ui/Layout';
 import Settings from './components/Settings';
 import Modal from './components/ui/Modal';
 import SettingsProvider from './context/SettingsContext';
-import Home from './pages/home';
-import Work from './pages/work';
-import Contact from './pages/contact';
-import AboutMe from './pages/about-me';
+import Home from './pages/Home';
+import Work from './pages/Work';
+import Contact from './pages/Contact';
+import AboutMe from './pages/AboutMe';
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
